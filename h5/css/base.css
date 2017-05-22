@@ -1349,12 +1349,72 @@ input:-ms-input-placeholder {
 
 
 .list_item_font{
-	font-size: 15px;
+	font-size: 17px;
 	/*color: #9a9a9a;*/
-	color: #ff0000;
+	color: #ffb02a;
 }
 .search_font{
 	font-size: 15px;
 	/*color: #9a9a9a;*/
 	color: #ff0000;
+}
+
+/*list 标题*/
+.mweui-cells__title {
+	margin-top: .77em;
+	margin-bottom: .3em;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #999999;
+	background-color: #ECECEC;
+	font-size: 17px;
+}
+/*list内容*/
+.mweui-cell {
+	padding: 10px 15px;
+	position: relative;
+	color: #007aff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+/*在每个mweui-cell元素前插入*/
+/*.mweui-cell:before {*/
+	/*content: " ";*/
+	/*position: absolute;*/
+	/*left: 0;*/
+	/*top: 0;*/
+	/*right: 0;*/
+	/*height: 1px;*/
+	/*!*border-top: 1px solid #e5e5e5;*!*/
+	/*border-bottom: 1px solid #007aff;*/
+	/*color: #e5e5e5;*/
+	/*-webkit-transform-origin: 0 0;*/
+	/*transform-origin: 0 0;*/
+	/*-webkit-transform: scaleY(0.5);*/
+	/*transform: scaleY(0.5);*/
+	/*left: 15px;*/
+	/*z-index: 2;*/
+/*}*/
+
+/*在每个mweui-cell元素前插入*/
+.mweui-cell:after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 1px;
+	/*border-top: 1px solid #e5e5e5;*/
+	border-bottom: 1px solid #007aff;
+	color: #e5e5e5;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+	left: 15px;
+	z-index: 2;
 }
