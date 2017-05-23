@@ -1,0 +1,3558 @@
+[ 2017-05-19T09:54:52+08:00 ] ::1 /personalCenter/h5admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006926s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.245308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.245453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025687s ]
+
+[ 2017-05-19T10:09:23+08:00 ] ::1 /personalCenter/h5admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2017-05-19T10:09:59+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+ERR: 模板不存在:./Application/Home/View/StudentInfo/index.html
+
+[ 2017-05-19T10:10:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime(): stat failed for ./Application/Runtime/Cache\bdf80224e4bff4a15caf67298725d55cfa0538ef.file.studentinfo.html.php D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Application/Runtime/Cache\bdf80224e4bff4a15caf67298725d55cfa0538ef.file.studentinfo.html.php): No such file or directory D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2017-05-19T10:10:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+ERR: 非法操作:css
+
+[ 2017-05-19T10:10:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+ERR: 非法操作:dist
+
+[ 2017-05-19T10:10:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+ERR: 非法操作:css
+
+[ 2017-05-19T10:10:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+ERR: 非法操作:css
+
+[ 2017-05-19T10:10:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+ERR: 非法操作:dist
+
+[ 2017-05-19T10:10:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:10:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+
+[ 2017-05-19T10:10:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+
+[ 2017-05-19T10:10:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:10:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:13:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:13:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2017-05-19T10:13:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:13:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:13:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+
+[ 2017-05-19T10:13:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+
+[ 2017-05-19T10:13:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:13:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2017-05-19T10:13:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:13:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:13:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:13:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+
+[ 2017-05-19T10:13:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-05-19T10:13:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:15:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-05-19T10:15:03+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:03+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:03+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:03+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:15:03+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:03+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:03+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-05-19T10:15:03+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:15:03+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+
+[ 2017-05-19T10:15:03+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:15:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2017-05-19T10:15:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:15:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:15:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-05-19T10:15:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+
+[ 2017-05-19T10:15:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:15:36+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:36+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:36+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:36+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:15:36+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:21:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001599s ]
+
+[ 2017-05-19T10:21:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:21:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:21:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:21:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:21:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:21:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:21:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:21:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+
+[ 2017-05-19T10:21:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+
+[ 2017-05-19T10:21:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:22:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2017-05-19T10:22:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__%22/css/normalize.css%22/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+ERR: 非法操作:__PUBLIC__"
+
+[ 2017-05-19T10:22:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:22:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:22:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:22:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:22:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001813s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:22:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:22:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+
+[ 2017-05-19T10:22:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2017-05-19T10:22:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:24:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2017-05-19T10:24:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:24:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:24:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:24:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:24:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:24:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:24:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+
+[ 2017-05-19T10:24:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+
+[ 2017-05-19T10:24:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:24:02+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2017-05-19T10:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+
+[ 2017-05-19T10:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-05-19T10:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001832s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:25:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2017-05-19T10:25:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:25:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-05-19T10:25:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:25:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+
+[ 2017-05-19T10:25:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:25:34+08:00 ] ::1 /personalCenter/h5admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2017-05-19T10:25:43+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2017-05-19T10:25:43+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:43+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:25:43+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:43+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:43+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:43+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:43+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+
+[ 2017-05-19T10:25:43+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:25:43+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:25:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/stupractice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+ERR: 非法操作:stupractice
+
+[ 2017-05-19T10:25:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:25:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:25:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:25:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:27:49+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001116s ]
+
+[ 2017-05-19T10:27:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:27:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:27:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:27:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:27:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:27:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:27:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+
+[ 2017-05-19T10:27:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+
+[ 2017-05-19T10:27:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:27:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:27:50+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:27:51+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-05-19T10:27:51+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:27:51+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:27:51+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:27:51+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:27:51+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:27:51+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:27:51+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:27:51+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+
+[ 2017-05-19T10:27:51+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+
+[ 2017-05-19T10:27:51+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:34:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2017-05-19T10:34:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:34:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:34:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:34:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:34:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:34:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:34:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001123s ]
+
+[ 2017-05-19T10:34:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:34:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:34:46+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:04+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.014303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014547s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001375s ]
+
+[ 2017-05-19T10:35:04+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:04+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+
+[ 2017-05-19T10:35:04+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:04+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:06+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-05-19T10:35:06+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:06+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+
+[ 2017-05-19T10:35:06+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:06+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2017-05-19T10:35:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+
+[ 2017-05-19T10:35:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:08+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:18+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2017-05-19T10:35:18+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:18+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+
+[ 2017-05-19T10:35:18+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:18+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2017-05-19T10:35:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:35:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:35:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:35:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:35:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:35:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+
+[ 2017-05-19T10:35:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:35:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+
+[ 2017-05-19T10:35:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:36:41+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime(): stat failed for TMPL_PATH\StudentInfo\studentinfo.html D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 315 行.
+NOTIC: [2] filemtime(): stat failed for StudentInfo\studentinfo.html D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 315 行.
+ERR: Unable to load template file 'StudentInfo/studentinfo.html'
+
+[ 2017-05-19T10:40:59+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime(): stat failed for TMPL_PATH\StudentInfo\studentinfo.html D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 315 行.
+NOTIC: [2] filemtime(): stat failed for StudentInfo\studentinfo.html D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 315 行.
+ERR: Unable to load template file 'StudentInfo/studentinfo.html'
+
+[ 2017-05-19T10:40:59+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime(): stat failed for TMPL_PATH\StudentInfo\studentinfo.html D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 315 行.
+NOTIC: [2] filemtime(): stat failed for StudentInfo\studentinfo.html D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 315 行.
+ERR: Unable to load template file 'StudentInfo/studentinfo.html'
+
+[ 2017-05-19T10:41:16+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2017-05-19T10:41:16+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:41:16+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:41:16+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:41:16+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:41:16+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002268s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:41:16+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:41:16+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+
+[ 2017-05-19T10:41:16+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:41:16+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+
+[ 2017-05-19T10:41:16+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:41:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2017-05-19T10:41:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:41:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:41:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:41:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:41:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:41:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:41:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+
+[ 2017-05-19T10:41:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:41:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+
+[ 2017-05-19T10:41:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:48:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-05-19T10:48:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:48:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002123s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:48:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:48:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000483s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001634s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:48:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:48:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:48:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+
+[ 2017-05-19T10:48:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:48:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-05-19T10:48:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:48:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:49:27+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-05-19T10:49:27+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:49:27+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+
+[ 2017-05-19T10:49:27+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:49:27+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:50:06+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2017-05-19T10:50:06+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:50:06+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-05-19T10:50:06+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:50:06+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:50:06+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:51:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2017-05-19T10:51:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:51:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:51:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+
+[ 2017-05-19T10:51:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+
+[ 2017-05-19T10:51:32+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:51:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2017-05-19T10:51:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:51:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004889s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+
+[ 2017-05-19T10:51:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:51:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+
+[ 2017-05-19T10:51:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:51:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2017-05-19T10:51:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/zepto.alert.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/style/weui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:51:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/css/normalize.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/dist/example/example.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+ERR: 非法操作:__PUBLIC__
+
+[ 2017-05-19T10:51:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/__PUBLIC__/img/goback.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+
+[ 2017-05-19T10:51:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:51:39+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+
+[ 2017-05-19T10:51:40+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:53:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-05-19T10:53:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:53:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+
+[ 2017-05-19T10:53:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:53:38+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:59:54+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2017-05-19T10:59:54+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:59:54+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+
+[ 2017-05-19T10:59:54+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T10:59:54+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+ERR: 非法操作:js
+
+[ 2017-05-19T11:00:26+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2017-05-19T11:02:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime(): stat failed for ./Application/Runtime/Cache\60830e4df782bea42bc708a8572fb92817a4ae13.file.student.html.php D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Application/Runtime/Cache\60830e4df782bea42bc708a8572fb92817a4ae13.file.student.html.php): No such file or directory D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000679s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2017-05-19T11:02:41+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/studentlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+ERR: 非法操作:studentlist
+
+[ 2017-05-19T11:07:26+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2017-05-19T11:07:53+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2017-05-19T11:07:55+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/studentlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime(): stat failed for ./Application/Runtime/Cache\52e455b534089883ab1565dbd72e238d35d717dd.file.studentlist.html.php D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Application/Runtime/Cache\52e455b534089883ab1565dbd72e238d35d717dd.file.studentlist.html.php): No such file or directory D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001155s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001089s ]
+
+[ 2017-05-19T11:49:09+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2017-05-19T11:49:30+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2017-05-19T11:51:47+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2017-05-19T11:51:47+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/studentlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000567s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2017-05-19T11:53:48+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000675s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2017-05-19T11:53:53+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000616s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2017-05-19T20:34:11+08:00 ] ::1 /personalCenter/h5admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2017-05-19T20:34:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Common\functions.php 第 1272 行.
+
+[ 2017-05-19T20:35:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Common\functions.php 第 1272 行.
+
+[ 2017-05-19T20:36:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Common\functions.php 第 1272 行.
+
+[ 2017-05-19T20:38:52+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000597s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2017-05-19T20:39:33+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime(): stat failed for ./Application/Runtime/Cache\14ed165b3983deeb0c0d6a50858076d3bc8529ac.file.index.html.php D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Application/Runtime/Cache\14ed165b3983deeb0c0d6a50858076d3bc8529ac.file.index.html.php): No such file or directory D:\wamp64\www\personalCenter\h5admin\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2017-05-19T20:39:34+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2017-05-19T20:41:37+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/studentlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+
+[ 2017-05-19T20:42:15+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/studentlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+
+[ 2017-05-19T20:42:41+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2017-05-19T20:42:42+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/studentlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000837s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2017-05-19T20:46:54+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2017-05-19T20:46:56+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/studentlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-05-19T20:47:17+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/studentlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-05-19T20:50:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/studentinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001267s ]
+
+[ 2017-05-19T20:50:36+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000881s ]
+
+[ 2017-05-19T21:18:58+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/zepto.alert.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:18:58+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/dist/style/weui.css
+ERR: 非法操作:dist
+
+[ 2017-05-19T21:18:58+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/student.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:18:58+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/dist/example/example.css
+ERR: 非法操作:dist
+
+[ 2017-05-19T21:18:58+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/normalize.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:18:58+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/base.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:18:58+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+ERR: 非法操作:js
+
+[ 2017-05-19T21:18:58+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+ERR: 非法操作:js
+
+[ 2017-05-19T21:18:58+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+ERR: 非法操作:js
+
+[ 2017-05-19T21:18:58+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+ERR: 非法操作:js
+
+[ 2017-05-19T21:19:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/normalize.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:19:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/dist/example/example.css
+ERR: 非法操作:dist
+
+[ 2017-05-19T21:19:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+ERR: 非法操作:js
+
+[ 2017-05-19T21:19:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/dist/style/weui.css
+ERR: 非法操作:dist
+
+[ 2017-05-19T21:19:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/zepto.alert.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:19:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/student.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:19:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/base.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:19:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+ERR: 非法操作:js
+
+[ 2017-05-19T21:19:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+ERR: 非法操作:js
+
+[ 2017-05-19T21:23:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/normalize.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:23:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/dist/example/example.css
+ERR: 非法操作:dist
+
+[ 2017-05-19T21:23:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/student.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:23:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/zepto.alert.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:23:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/base.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:23:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/dist/style/weui.css
+ERR: 非法操作:dist
+
+[ 2017-05-19T21:23:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.min.js
+ERR: 非法操作:js
+
+[ 2017-05-19T21:23:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+ERR: 非法操作:js
+
+[ 2017-05-19T21:23:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/zepto.alert.js
+ERR: 非法操作:js
+
+[ 2017-05-19T21:23:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/js/base.js
+ERR: 非法操作:js
+
+[ 2017-05-19T21:23:27+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/student.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:23:31+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/student.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:23:34+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/student.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:24:19+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/student.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:24:21+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/student.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:24:23+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/student.css
+ERR: 非法操作:css
+
+[ 2017-05-19T21:24:26+08:00 ] ::1 /personalCenter/h5admin/index.php/Home/StudentInfo/css/student.css
+ERR: 非法操作:css
+

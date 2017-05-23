@@ -129,6 +129,8 @@ class View {
         $content = ob_get_clean();
         // 内容过滤标签
         Hook::listen('view_filter',$content);
+        //为了输出__PUBLIC__ 我自己加的一段代码
+        Hook::listen('template_filter',$content);
         // 输出模板文件
         return $content;
     }
