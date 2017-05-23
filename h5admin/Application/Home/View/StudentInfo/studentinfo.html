@@ -34,53 +34,59 @@
     <div class="weui-cells">
 
         <div class="weui-cell">
-            <div class="weui-cell__hd"><img src="__PUBLIC__/images/head.jpg" alt="" style="width:60px;margin-right:15px;display:block"></div>
+            <div class="weui-cell__hd"><img src="{%$imgurl%}" alt="" style="width:60px;margin-right:15px;display:block"></div>
             <div class="weui-cell__bd">
-                <p>徐凯文</p>
-                <p>男</p>
+                <p>{%$name%}</p>
+                <p>{%$gender%}</p>
             </div>
             <div class="weui-cell__ft">已经立项</div>
         </div>
+
+        <div class="mweui-cells__title">基本信息</div>
 
         <!--学号-->
         <div class="weui-cell">
             <div class="weui-cell__bd">
                 <p>学号</p>
             </div>
-            <div class="weui-cell__ft">1601210001</div>
+            <div class="weui-cell__ft">{%$stuId%}</div>
         </div>
 
         <!--方向-->
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p>方向</p>
+                <p>研究方向</p>
             </div>
-            <div class="weui-cell__ft">软件开发</div>
+            <div class="weui-cell__ft">{%$researcharea%}</div>
         </div>
 
-        <!--手机-->
+        <!--专业-->
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p>手机</p>
+                <p>专业</p>
             </div>
-            <div class="weui-cell__ft">13912345678</div>
+            <div class="weui-cell__ft">{%$major%}</div>
         </div>
 
-        <!--电子邮箱-->
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p>E-mail</p>
-            </div>
-            <div class="weui-cell__ft">abc@pku.edu.cn</div>
-        </div>
 
         <!--入学年份-->
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p>入学年份</p>
+                <p>年级</p>
             </div>
-            <div class="weui-cell__ft">2016级</div>
+            <div class="weui-cell__ft">{%$grade%}</div>
         </div>
+
+        <!--校区-->
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>校区</p>
+            </div>
+            <div class="weui-cell__ft">{%$location%}</div>
+        </div>
+
+
+        <div class="mweui-cells__title">基本状态</div>
 
         <!--学习状态-->
         <div class="weui-cell">
@@ -110,6 +116,27 @@
             </div>
             <div class="weui-cell__ft">已申请</div>
         </a>
+
+
+        <div class="mweui-cells__title">联系方式</div>
+
+        <!--手机-->
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>手机</p>
+            </div>
+            <div class="weui-cell__ft">{%$telephone%}</div>
+        </div>
+
+        <!--电子邮箱-->
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>E-mail</p>
+            </div>
+            <div class="weui-cell__ft">{%$mail%}</div>
+        </div>
+
+
     </div>
 
 

@@ -10,30 +10,31 @@ class CommonController extends Controller {
 
         session('[start]');
 
-        if (isset($_GET['code'])){
-            //step 1 --> 用户同意授权后,获取code
-            $code =  $_GET['code'];
+        if(!session('?userid')){
+            if (isset($_GET['code'])){
+                //step 1 --> 用户同意授权后,获取code
+                $code =  $_GET['code'];
 
 
-            //step 2 --> 通过code换取网页授权access_token
-            //$appid = 'wx4a056b3e16bf1037';
-            //$secret = 'c8f431ffc5d2fb5a1a7504e3181d06fa';
-            //构造url
+                //step 2 --> 通过code换取网页授权access_token
+                //$appid = 'wx4a056b3e16bf1037';
+                //$secret = 'c8f431ffc5d2fb5a1a7504e3181d06fa';
+                //构造url
 
-            $filepath = "/home/ubuntu/wxPublic/token.txt";
-            $fp = fopen($filepath,"r");
-            $acc = fread($fp,filesize($filepath));
-            fclose($fp);
+                $filepath = "/home/ubuntu/wxPublic/token.txt";
+                $fp = fopen($filepath,"r");
+                $acc = fread($fp,filesize($filepath));
+                fclose($fp);
 
 
-            //step 3 --> 通过code和access_token换取userid
-            $url = 'https://qyapi.weixin.qq.com/cgi-bin/user/getuserinfo?access_token='.$acc.'&code='.$code;
-            //返回json数据包
-            $json = file_get_contents($url);
-            //将json格式转换为数组
-            $arr = json_decode($json,true);
-            //获取access_token和openid
-            $userid = $arr['UserId'];
+                //step 3 --> 通过code和access_token换取userid
+                $url = 'https://qyapi.weixin.qq.com/cgi-bin/user/getuserinfo?access_token='.$acc.'&code='.$code;
+                //返回json数据包
+                $json = file_get_contents($url);
+                //将json格式转换为数组
+                $arr = json_decode($json,true);
+                //获取access_token和openid
+                $userid = $arr['UserId'];
 
 
 //            $dat = array ("userid" => strval($userid));
@@ -52,15 +53,15 @@ class CommonController extends Controller {
 //            $htmlarr = json_decode($html,true);
 //            $openid = $htmlarr['openid'];
 
-            if($json == null){
-                echo "access_token error!";
-                exit();
-            }else{
-                $_SESSION['userid'] = $userid;
-                //$_SESSION['access_token']=$acc;
-                //$_SESSION['openid'] = $openid;
-                //$this->redirect('/Index/index');
-            }
+                if($json == null){
+                    echo "access_token error!";
+                    exit();
+                }else{
+                    $_SESSION['userid'] = $userid;
+                    //$_SESSION['access_token']=$acc;
+                    //$_SESSION['openid'] = $openid;
+                    //$this->redirect('/Index/index');
+                }
 
 
 //            //step 3 --> 拉取用户信息
@@ -88,10 +89,13 @@ class CommonController extends Controller {
 //            echo "<br/>省份：".$province;
 //            echo "<br/>城市：".$city;
 
-        }else{             //用户未同意授权
-            echo "no grant , please grant first";
-            exit();
+            }else{             //用户未同意授权
+                echo "no grant , please grant first";
+                exit();
+            }
         }
+
+
     }
 }
 
