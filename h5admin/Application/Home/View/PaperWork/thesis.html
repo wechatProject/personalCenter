@@ -1,0 +1,53 @@
+<!--指导论文查询-->
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>指导论文情况查询</title>
+    <link rel="stylesheet" href="../../../../../h5/css/normalize.css"/>
+    <link rel="stylesheet" href="../../../../../h5/css/base.css">
+    <link rel="stylesheet" href="../../../../../h5/css/zepto.alert.css">
+    <link rel="stylesheet" href="../../../../../h5/dist/style/weui.css"/>
+    <link rel="stylesheet" href="../../../../../h5/dist/example/example.css"/>
+</head>
+
+<body>
+<!--顶部导航条-->
+<div class="head">
+    <div class="title-nav">指导论文情况查询</div>
+</div>
+
+<div class="wrap">
+    <!--查询条件-->
+    <div class="weui-cells">
+        <div class="weui-cell weui-cell_select weui-cell_select-after">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">答辩时间段</label>
+            </div>
+            <div class="weui-cell__bd">
+                <select class="weui-select" name="select2">
+                    <option value="0">当前</option>
+                    <option value="1">201707</option>
+                    <option value="2">201701</option>
+                    <option value="3">201607</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!--查询按钮,点击跳转到studentlist.html页面-->
+    <div class="weui-btn-area">
+        <a class="stuinfo-submit weui-btn weui-btn_primary" href="thesislist.html" id="thesisinfo-submit">查询</a>
+    </div>
+
+
+</div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="../../../../../h5/js/zepto.min.js"></script>
+<script type="text/javascript" src="../../../../../h5/js/zepto.alert.js"></script>
+<script type="text/javascript" src="../../../../../h5/js/base.js"></script>
+</html>

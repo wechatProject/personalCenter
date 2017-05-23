@@ -1,0 +1,90 @@
+<!--教师的详细信息-->
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>我的信息</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/normalize.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/zepto.alert.css">
+    <link rel="stylesheet" href="__PUBLIC__/dist/style/weui.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/dist/example/example.css"/>
+</head>
+<body>
+<!--顶部导航条-->
+<div class="head">
+    <div class="title-nav">我的信息</div>
+</div>
+
+<!--信息介绍-->
+<br>
+<div class="weui-cells__title"></div>
+
+<!--教师信息-->
+<div class="weui-cells">
+
+    <div class="weui-cells">
+
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><img src="{%$imgurl%}" alt="" style="width:60px;margin-right:15px;display:block"></div>
+            <div class="weui-cell__hd">
+                <p>{%$name%}</p>
+                <p><span>{%$gender%}</span>
+            </div>
+        </div>
+
+        <!--教师id-->
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>工号</p>
+            </div>
+            <div class="weui-cell__ft">{%$userid%}</div>
+        </div>
+
+
+        <!--职称-->
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>职称</p>
+            </div>
+            <div class="weui-cell__ft">{%$title%}</div>
+        </div>
+
+        <!--手机-->
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>手机</p>
+            </div>
+            <div class="weui-cell__ft">{%$telephone%}</div>
+        </div>
+
+
+
+        <!--E-mail-->
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>E-mail</p>
+            </div>
+            <div class="weui-cell__ft">{%$mail%}</div>
+        </div>
+
+
+        <!--&lt;!&ndash;个人介绍&ndash;&gt;-->
+        <!--<div class="weui-cell">个人介绍</div>-->
+        <!--&lt;!&ndash;个人介绍内容&ndash;&gt;-->
+        <!--<div class="weui-cell">-->
+            <!--... ...-->
+
+        <!--</div>-->
+
+    </div>
+
+
+</div>
+
+</div>
+</body>
+</html>
