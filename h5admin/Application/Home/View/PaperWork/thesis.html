@@ -1,4 +1,4 @@
-<!--学生答辩情况-->
+<!--指导论文查询-->
 
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
@@ -6,57 +6,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>学生答辩情况</title>
+    <title>指导论文情况查询</title>
     <link rel="stylesheet" href="../../../../../h5/css/normalize.css"/>
     <link rel="stylesheet" href="../../../../../h5/css/base.css">
     <link rel="stylesheet" href="../../../../../h5/css/zepto.alert.css">
     <link rel="stylesheet" href="../../../../../h5/dist/style/weui.css"/>
     <link rel="stylesheet" href="../../../../../h5/dist/example/example.css"/>
-    <style type="text/css">
-        @import url("css/student.css");
-
-        .wrap .item-list.item-list-al {
-            font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
-        }
-    </style>
 </head>
+
 <body>
 <!--顶部导航条-->
 <div class="head">
-    <div class="title-nav">学生答辩情况</div>
-    <div class="go-back">
-        <img src="../../../../../h5/img/goback.png"/>
-    </div>
+    <div class="title-nav">指导论文情况查询</div>
 </div>
-<br>
-<div class="weui-cells__title"></div>
 
-<!--答辩安排信息-->
-<div class="weui-cells">
-
-
+<div class="wrap">
+    <!--查询条件-->
     <div class="weui-cells">
-
-        <!--答辩日期-->
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p>答辩日期</p>
+        <div class="weui-cell weui-cell_select weui-cell_select-after">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">答辩时间段</label>
             </div>
-            <div class="weui-cell__ft">2017-01-01</div>
-        </div>
-
-        <!--其他答辩信息-->
-        <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p>其他答辩信息</p>
+                <select class="weui-select" name="select2">
+                    <option value="0">当前</option>
+                    <option value="1">201707</option>
+                    <option value="2">201701</option>
+                    <option value="3">201607</option>
+                </select>
             </div>
-            <div class="weui-cell__ft">暂时未想到</div>
         </div>
-
+    </div>
+    <!--查询按钮,点击跳转到studentlist.html页面-->
+    <div class="weui-btn-area">
+        <a class="stuinfo-submit weui-btn weui-btn_primary" href="thesislist.html" id="thesisinfo-submit">查询</a>
     </div>
 
-</div>
 
+</div>
+</div>
 </div>
 </body>
 <script type="text/javascript" src="../../../../../h5/js/zepto.min.js"></script>

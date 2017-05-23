@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>我的学生</title>
-    <link rel="stylesheet" href="__PUBLIC__/css/normalize.css"/>
-    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/css/zepto.alert.css">
-    <link rel="stylesheet" href="__PUBLIC__/dist/style/weui.css"/>
-    <link rel="stylesheet" href="__PUBLIC__/dist/example/example.css"/>
+    <link rel="stylesheet" href="../../../../../h5/css/normalize.css"/>
+    <link rel="stylesheet" href="../../../../../h5/css/base.css">
+    <link rel="stylesheet" href="../../../../../h5/css/zepto.alert.css">
+    <link rel="stylesheet" href="../../../../../h5/dist/style/weui.css"/>
+    <link rel="stylesheet" href="../../../../../h5/dist/example/example.css"/>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 <div class="head">
     <div class="title-nav">我的学生</div>
     <div class="go-back">
-        <img src="__PUBLIC__/img/goback.png"/>
+        <img src="../../../../../h5/img/goback.png"/>
     </div>
 </div>
 
@@ -29,25 +29,35 @@
     <p></p>
     <!--学生列表-->
     <div class="weui-cells">
+
         <!--学生1-->
-        <a class="weui-cell weui-cell_access" href="__URL__/studentinfo?stuId={%$stuId%}">
-            <!--学生头像(微信头像)-->
-            <div class="weui-cell__hd">
-                <img src="__PUBLIC__/images/default.png" alt="" style="width:40px;margin-right:15px;display:block">
-            </div>
+        <a class="weui-cell weui-cell_access" href="studentinfo.html">
             <!--学生学号和姓名-->
             <div class="weui-cell__bd">
-                <span class="stu-num">1601210001</span>&nbsp;&nbsp;<span class="stu-name">徐凯文</span>
+                    <span class="stu-num">1601210001</span>&nbsp;&nbsp;<span class="stu-name">徐凯文</span>
             </div>
             <!--学生状态:已经立项,已经结项,已经开题,已交初稿,已交终稿,已经送审,申请答辩-->
             <div class="stu-status weui-cell__ft">已交初稿</div>
         </a>
+        <!--学生2-->
+        <a class="weui-cell weui-cell_access" href="studentinfo.html">
+            <div class="weui-cell__bd">
+                <span class="stu-num">1601210002</span>&nbsp;&nbsp;<span class="stu-name">刘海骅</span>
+            </div>
+            <div class="stu-status weui-cell__ft">已交终稿</div>
+        </a>
+        <!--学生3-->
+        <a class="weui-cell weui-cell_access" href="studentinfo.html">
+            <div class="weui-cell__bd">
+                <span class="stu-num">1601210003</span>&nbsp;&nbsp;<span class="stu-name">梁冠琼</span>
+            </div>
+            <div class="stu-status weui-cell__ft">已经立项</div>
+        </a>
+    </div>
     </div>
 </div>
-</div>
-
 </body>
-<script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/zepto.alert.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/base.js"></script>
+<script type="text/javascript" src="../../../../../h5/js/zepto.min.js"></script>
+<script type="text/javascript" src="../../../../../h5/js/zepto.alert.js"></script>
+<script type="text/javascript" src="../../../../../h5/js/base.js"></script>
 </html>
