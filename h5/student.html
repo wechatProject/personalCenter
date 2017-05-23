@@ -1,21 +1,30 @@
 <!--学生信息查询页面-->
-
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-<head>
+<head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <title>我的学生</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>授课课时查询</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/zepto.alert.css">
     <link rel="stylesheet" href="./dist/style/weui.css"/>
     <link rel="stylesheet" href="./dist/example/example.css"/>
-    <link rel="stylesheet" href="./css/my.css"/>
 </head>
 <body>
-<!--查询标题-->
-<div class="page__hd">
-    <h1 class="page__title">学生信息查询</h1>
-    <!--<p class="page__desc">查询</p>-->
+<!--顶部导航条-->
+<div class="head">
+    <div class="title-nav">学生信息查询</div>
 </div>
+
+
+<div class="wrap">
+<!--查询标题-->
+<!--<div class="page__hd">-->
+    <!--<h1 class="page__title">学生信息查询</h1>-->
+    <!--&lt;!&ndash;<p class="page__desc">查询</p>&ndash;&gt;-->
+<!--</div>-->
 
 <!--学生学号-->
 <div class="weui-cell">
@@ -87,11 +96,23 @@
             <option value="1">已经开题</option>
             <option value="2">已交初稿</option>
             <option value="3">已交终稿</option>
-            <option value="4">已经送审</option>
         </select>
     </div>
 </div>
-
+<!--答辩状态选择-->
+<div class="weui-cell weui-cell_select weui-cell_select-after">
+    <div class="weui-cell__hd">
+        <label for="" class="weui-label">答辩状态</label>
+    </div>
+    <div class="weui-cell__bd">
+        <select class="stu-thesis weui-select" name="select2">
+            <option value="0">全部</option>
+            <option value="1">已进入答辩</option>
+            <option value="3">已通过答辩</option>
+            <option value="4">未通过答辩</option>
+        </select>
+    </div>
+</div>
 
 <!--查询按钮,点击跳转到studentlist.html页面-->
 <div class="weui-btn-area">
