@@ -6,99 +6,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title>我的学生</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/normalize.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/zepto.alert.css">
     <link rel="stylesheet" href="__PUBLIC__/dist/style/weui.css"/>
     <link rel="stylesheet" href="__PUBLIC__/dist/example/example.css"/>
-    <link rel="stylesheet" href="__PUBLIC__/css/my.css"/>
 </head>
 <body>
-<!--查询标题-->
-<div class="page__hd">
-    <h1 class="page__title">学生信息查询</h1>
-    <!--<p class="page__desc">查询</p>-->
+<!--顶部导航条-->
+<div class="head">
+    <div class="title-nav">学生信息查询</div>
 </div>
+<div class="wrap">
 <form id="searchStudent" method="post" action="__URL__/studentlist">
     <!--学生学号-->
     <div class="weui-cell">
-        <div class="weui-cell__hd"><label class="weui-label">学生学号{%$id%}</label></div>
+        <div class="weui-cell__hd"><label class="weui-label">学号{%$id%}</label></div>
         <div class="weui-cell__bd">
-            <input class="stu-num weui-input" name="studentId" type="number" pattern="[0-9]*" placeholder="请输入学生学号"/>
+            <input class="stu-num weui-input" name="studentId" type="number" pattern="[0-9]*" placeholder="可选填"/>
         </div>
     </div>
     <!--学生姓名-->
     <div class="weui-cell">
-        <div class="weui-cell__hd"><label class="weui-label">学生姓名</label></div>
+        <div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
         <div class="weui-cell__bd">
-            <input class="stu-name weui-input" name="studentName" placeholder="请输入学生姓名"/>
+            <input class="stu-name weui-input" name="studentName" placeholder="可选填"/>
         </div>
     </div>
 
-    <!--入学年份选择-->
+    <!--入学年份选择,默认为当前学年(研一的新生)-->
     <div class="weui-cell weui-cell_select weui-cell_select-after">
         <div class="weui-cell__hd">
-            <label for="" class="weui-label">入学年份</label>
+            <label for="" class="weui-label">年级</label>
         </div>
         <div class="weui-cell__bd">
             <select class="stu-grade weui-select" name="studentYear">
                 <option value="0">全部</option>
-                <option value="1">2016</option>
-                <option value="2">2015</option>
-                <option value="3">2014</option>
-                <option value="4">2013</option>
+                <option value="0">2017级</option>
+                <option value="1">2016级</option>
+                <option value="2">2015级</option>
+                <option value="3">2014级</option>
+                <option value="4">2013级</option>
             </select>
         </div>
     </div>
 
-    <!--查询条件-->
-    <!--状态选择-->
+
+    <!--状态选择,默认为全部-->
     <div class="weui-cell weui-cell_select weui-cell_select-after">
         <div class="weui-cell__hd">
-            <label for="" class="weui-label">学习状态</label>
-        </div>
-        <div class="weui-cell__bd">
-            <select class="stu-satus weui-select" name="studyStatus">
-                <option value="0">全部</option>
-                <option value="1">在读</option>
-                <option value="2">毕业</option>
-                <option value="3">休学</option>
-            </select>
-        </div>
-    </div>
-    <!--实习状态选择-->
-    <div class="weui-cell weui-cell_select weui-cell_select-after">
-        <div class="weui-cell__hd">
-            <label for="" class="weui-label">实习状态</label>
+            <label for="" class="weui-label">状态</label>
         </div>
         <div class="weui-cell__bd">
             <select class="stu-practice weui-select" name="practiceStatus">
                 <option value="0">全部</option>
-                <option value="1">已经立项</option>
-                <option value="2">已经结项</option>
-            </select>
-        </div>
-    </div>
-    <!--论文状态选择-->
-    <div class="weui-cell weui-cell_select weui-cell_select-after">
-        <div class="weui-cell__hd">
-            <label for="" class="weui-label">论文状态</label>
-        </div>
-        <div class="weui-cell__bd">
-            <select class="stu-thesis weui-select" name="paperStatus">
-                <option value="0">全部</option>
-                <option value="1">已经开题</option>
-                <option value="2">已交初稿</option>
-                <option value="3">已交终稿</option>
-                <option value="4">已经送审</option>
+                <option value="1">未实习</option>
+                <option value="2">已立项</option>
+                <option value="3">已结项</option>
+                <option value="3">未开题</option>
+                <option value="3">已开题</option>
+                <option value="3">未通过答辩</option>
+                <option value="3">已通过答辩</option>
             </select>
         </div>
     </div>
 
 </form>
 
-<!--查询按钮,点击跳转到studentlist.html页面-->
-<div class="weui-btn-area">
-    <button class="stuinfo-submit weui-btn weui-btn_primary" id="stuinfo-submit">查询</button>
-</div>
+    <!--查询按钮,点击跳转到studentlist.html页面-->
+    <div class="weui-btn-area">
+        <a class="stuinfo-submit weui-btn weui-btn_primary" href="studentlist.html" id="stulist-submit">查询</a>
+    </div>
 
+</div>
 </body>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
 <script>
