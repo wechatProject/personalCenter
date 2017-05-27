@@ -1,4 +1,4 @@
-<!--学生列表-->
+<!--实习信息-->
 
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
@@ -6,44 +6,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>我的学生</title>
+    <title>实习信息</title>
     <link rel="stylesheet" href="__PUBLIC__/css/normalize.css"/>
     <link rel="stylesheet" href="__PUBLIC__/css/base.css">
     <link rel="stylesheet" href="__PUBLIC__/css/zepto.alert.css">
     <link rel="stylesheet" href="__PUBLIC__/dist/style/weui.css"/>
     <link rel="stylesheet" href="__PUBLIC__/dist/example/example.css"/>
 </head>
-
 <body>
-<!--顶部导航条-->
-<div class="head">
-    <div class="title-nav">我的学生</div>
-    <div class="go-back">
-        <img src="__PUBLIC__/img/goback.png"/>
+
+<!--实习信息-->
+<div class="wrap">
+
+    <div class="weui-cells">
+        <!--立项日期-->
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>立项日期</p>
+            </div>
+            <div class="weui-cell__ft">{%$lxDate%}</div>
+        </div>
+
+        <!--结项日期-->
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>结项日期</p>
+            </div>
+            <div class="weui-cell__ft">{%$jxDate%}</div>
+        </div>
+
+        <!--实习公司-->
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>实习公司</p>
+            </div>
+            <div class="weui-cell__ft">{%$company%}</div>
+        </div>
     </div>
+
 </div>
 
-<div class="wrap">
-    <!--条件查询结果-->
-    <div class="weui-cells__title">已经实习立项的学生人数为<span class="total-num">1</span>人</div>
-    <p></p>
-    <!--学生列表-->
-    <div class="weui-cells">
-
-        
-        {%foreach from=$stu item=it%}
-        <a class="weui-cell weui-cell_access" href="__URL__/studentinfo.html?stuId={%$it.studentid%}">
-            <!--学生学号和姓名-->
-            <div class="weui-cell__bd">
-                    <span class="stu-num">{%$it.studentid%}</span>&nbsp;&nbsp;<span class="stu-name">{%$it.name%}</span>
-            </div>
-            <!--学生状态:已经立项,已经结项,已经开题,已交初稿,已交终稿,已经送审,申请答辩-->
-            <div class="stu-status weui-cell__ft">{%it.status%}</div>
-        </a>
-		{%/foreach%}
-
-    </div>
-    </div>
 </div>
 </body>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>

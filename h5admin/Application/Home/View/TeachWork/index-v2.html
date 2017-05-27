@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="__PUBLIC__/dist/style/weui.css"/>
     <link rel="stylesheet" href="__PUBLIC__/dist/example/example.css"/>
 </head>
-
-<!--动态加载课程列表-->
+<!--display方式显示课程列表-->
 <body>
 <div class="wrap">
     <!--<br>-->
@@ -53,15 +52,47 @@
     <div class="weui-cells__title"><span>16-17学年度</span><span>第二学期</span>授课总课时为<span class="total-num">48</span></div>
 
     <!--课程列表-->
-    <div id="coures" class="weui-cells"></div>
+    <div class="weui-cells">
+
+        <!--课程1-->
+        <div class="weui-media-box weui-media-box_text">
+            <!--课程名-->
+            <p class="mweui-media-box__desc">互联网软件开发技术实践</p>
+            <ul class="weui-media-box__info">
+                <!--选课人数-->
+                <li class="weui-media-box__info__meta">选课人数: 40人</li>
+            </ul>
+            <ul class="weui-media-box__info">
+                <!--课程学时-->
+                <li class="weui-media-box__info__meta"><span>48课时</span></li>
+                <!--开课时段-->
+                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><span>16-17学年</span> <span>第二学期</span></li>
+            </ul>
+        </div>
+
+        <!--课程2-->
+        <div class="weui-media-box weui-media-box_text">
+            <!--课程名-->
+            <p class="mweui-media-box__desc">海量数据处理</p>
+            <ul class="weui-media-box__info">
+                <!--选课人数-->
+                <li class="weui-media-box__info__meta">选课人数: 40人</li>
+            </ul>
+            <ul class="weui-media-box__info">
+                <!--课程学时-->
+                <li class="weui-media-box__info__meta"><span>48课时</span></li>
+                <!--开课时段-->
+                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><span>16-17学年</span> <span>第二学期</span></li>
+            </ul>
+        </div>
+
+    </div>
 </div>
 </div>
 </body>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.alert.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/config.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/base.js"></script>
-<script type="text/javascript">
-    Basicinfo.queryTeachWork();
+<script>
 </script>
 </html>

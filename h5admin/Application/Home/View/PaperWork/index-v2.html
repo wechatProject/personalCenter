@@ -52,15 +52,52 @@
     <!--条件查询结果(表述的不准确,根据实际情况再修改)-->
     <div class="weui-cells__title"><span>2017年</span><span>7月</span>通过论文答辩的学生为<span class="total-num">10</span>人</div>
     <!--通过答辩的学生列表-->
-    <div  id="paperwork" class="weui-cells"></div>
+    <div class="weui-cells">
+        <!--学生1-->
+        <div class="weui-media-box weui-media-box_text">
+            <!--学生年级、姓名-->
+            <p class="mweui-media-box__desc"><span>2016级</span>&nbsp;&nbsp;<span>徐凯文</span></p>
+            <ul class="weui-media-box__info">
+                <!--研究领域-->
+                <li class="weui-media-box__info__meta">方向:<span>计算机软件开发</span></li>
+            </ul>
+            <ul class="weui-media-box__info">
+                <li class="weui-media-box__info__meta">通过答辩</li>
+                <!--答辩时间-->
+                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">答辩时间 <span>2017年7月</span></li>
+            </ul>
+        </div>
+
+        <!--学生2-->
+        <div class="weui-media-box weui-media-box_text">
+            <!--学生年级、姓名-->
+            <p class="mweui-media-box__desc"><span>2016级</span>&nbsp;&nbsp;<span>张三</span></p>
+            <ul class="weui-media-box__info">
+                <!--研究领域-->
+                <li class="weui-media-box__info__meta">方向:<span>软件工程技术</span></li>
+            </ul>
+            <ul class="weui-media-box__info">
+                <li class="weui-media-box__info__meta">通过答辩</li>
+                <!--答辩时间-->
+                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">答辩时间 <span>2017年7月</span></li>
+            </ul>
+        </div>
+
+    </div>
 </div>
 </div>
 </body>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.alert.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/config.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/base.js"></script>
-<script type="text/javascript">
-    Basicinfo.queryPaperWork();
+<script>
+    $(function () {
+        $('#searchSubmit').click(function () {
+            //提交查询条件
+//            $('#searchPaperwork').submit();
+            //测试 可删除
+            location.href="index.html";
+        });
+    });
 </script>
 </html>

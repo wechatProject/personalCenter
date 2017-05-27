@@ -1,4 +1,4 @@
-<!--工作量统计 -- 授课信息主页:查询条件+课程列表-->
+<!--工作量统计 -- 综合实践:查询条件+课程列表-->
 
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>授课课时工作量</title>
+    <title>指导综合实践工作量</title>
     <link rel="stylesheet" href="__PUBLIC__/css/normalize.css"/>
     <link rel="stylesheet" href="__PUBLIC__/css/base.css">
     <link rel="stylesheet" href="__PUBLIC__/css/zepto.alert.css">
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="__PUBLIC__/dist/example/example.css"/>
 </head>
 
-<!--动态加载课程列表-->
 <body>
 <div class="wrap">
     <!--<br>-->
@@ -49,11 +48,12 @@
         </div>
     </form>
 
-    <!--条件查询结果-->
-    <div class="weui-cells__title"><span>16-17学年度</span><span>第二学期</span>授课总课时为<span class="total-num">48</span></div>
+    <!--条件查询结果(表述的不准确,不清楚综合实践的工作量怎么统计,按人数?,根据实际情况再修改)-->
+    <div class="weui-cells__title"><span>16-17学年度</span>指导综合实践的工作量为<span class="total-num">10</span>人</div>
 
-    <!--课程列表-->
-    <div id="coures" class="weui-cells"></div>
+    <!--综合实践信息列表-->
+    <div id="pracWork" class="weui-cells"></div>
+</div>
 </div>
 </div>
 </body>
@@ -62,6 +62,6 @@
 <script type="text/javascript" src="__PUBLIC__/js/config.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/base.js"></script>
 <script type="text/javascript">
-    Basicinfo.queryTeachWork();
+    Basicinfo.queryPracticeWork();
 </script>
 </html>
