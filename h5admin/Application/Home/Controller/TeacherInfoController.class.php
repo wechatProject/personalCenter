@@ -3,6 +3,9 @@
 namespace Home\Controller;
 
 
+/**
+ * 教师个人信息 -- 已经完成
+ */
 class TeacherInfoController extends CommonController{
     public function index(){
         $userid = $_SESSION['userid'];
@@ -17,6 +20,7 @@ class TeacherInfoController extends CommonController{
         //将json格式转换为数组
         $arr = json_decode($json,true);
 
+        $userid = $_SESSION['userid']?$_SESSION['userid']:"无";
         $name = $arr['data']['name'];
         $gender = $arr['data']['gender'];
         $title = $arr['data']['title'];
