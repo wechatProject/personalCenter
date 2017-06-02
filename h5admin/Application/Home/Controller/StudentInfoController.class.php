@@ -1,6 +1,8 @@
 <?php
 
 namespace Home\Controller;
+//use Think\Controller;
+use Think\Log;
 
 /**
  * 学生信息
@@ -14,27 +16,31 @@ namespace Home\Controller;
 class StudentInfoController extends CommonController  {
 
     public function index(){
-        $userid = $_SESSION['userid'];
-
-        //用api获取前端状态信息
-        //将状态信息赋值到前端
-        $this->assign('id',$userid);
 
         $this->display();
+
     }
 
     //获取该导师指导下的学生信息列表(接收前端StudentInfo/index.html的ajax请求)
     public function getAllStduentlist() {
+
+        Log::write("hello in there",LOG_INFO);
 //        $this->allowMethod(self::GET);
         //使用上述查询条件调用api获取学生列表
-        $teacherid = $_SESSION['userid'];
+        //$teacherid = $_SESSION['userid'];
+		$teacherid = "1601210606";
         $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 
         $url = "https://api.mysspku.com/index.php/V2/TeacherInfo/getStudents?teacherid=".$teacherid."&token=".$acc;
+
         //返回json数据包
         $json = file_get_contents($url);
         //将json格式转换为数组
         $arr = json_decode($json,true);
+
+
+
+
 
         //所有学生列表
         $stuArr = $arr['data']['students'];
@@ -98,16 +104,19 @@ class StudentInfoController extends CommonController  {
         //错误代码:0 - 无错误
         $error_code = $arr['errcode'];
         if($error_code == 0){//无错误
-            $result['meta']=array('code'=>0);
+            $result['meta']=array('code'=> "0");
             $result['stuData']=$stuArr;//所有学生信息列表
             $result['staData']=$staArr;//所有学生状态信息列表:当前状态、当前状态、开题状态、答辩状态
         }else if($error_code == 40901){//token不正确
-            $result['meta']=array('code' => 40901, 'error' => "error", 'info' => "error");
+            $result['meta']=array('code' => "40901", 'error' => "error", 'info' => "error");
         } else{//其他错误
-            $result['meta']=array('code' => 49999, 'error' => "error", 'info' => "error");
+            $result['meta']=array('code' => "49999", 'error' => "error", 'info' => "error");
         }
+        $test = json_encode($result);
+        Log::write("hello in there!!! $test ",LOG_INFO);
 
-        $this->AjaxReturn($result);
+        $this->ajaxReturn($result);
+
     }
 
     //获取该导师指导下的学生信息列表(display方式)

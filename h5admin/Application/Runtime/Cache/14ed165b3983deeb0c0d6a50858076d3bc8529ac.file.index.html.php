@@ -1,4 +1,25 @@
-<!--学生信息主页:查询+学生信息列表-->
+<?php /* Smarty version Smarty-3.1.6, created on 2017-05-31 21:57:00
+         compiled from "./Application/Home/View\StudentInfo\index.html" */ ?>
+<?php /*%%SmartyHeaderCode:25523592ebc6a2b30f1-49011880%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '14ed165b3983deeb0c0d6a50858076d3bc8529ac' => 
+    array (
+      0 => './Application/Home/View\\StudentInfo\\index.html',
+      1 => 1496239017,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '25523592ebc6a2b30f1-49011880',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_592ebc6a35afd',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_592ebc6a35afd')) {function content_592ebc6a35afd($_smarty_tpl) {?><!--学生信息主页:查询+学生信息列表-->
 
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
@@ -71,4 +92,4 @@
 <script type="text/javascript">
     Basicinfo.queryStuInfo();//条件查询该导师指导的学生列表
 </script>
-</html>
+</html><?php }} ?>

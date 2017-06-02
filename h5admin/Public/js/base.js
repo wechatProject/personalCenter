@@ -53,6 +53,7 @@
                 type : 'GET',
                 async: false,
                 url : urlstring,
+                dataType: 'json',
                 success: function(data){
                     staObj = data.staData;//暂时未用到
                     stuObj = data.stuData;
@@ -64,8 +65,11 @@
                         localStorage.setItem("stuStr",stuStr);//暂时未使用到
                     }
                 },
-                error: function(){
+                error: function(XMLHttpRequest, textStatus, errorThrown){
                     console.log("ajax error");
+                    console.log(XMLHttpRequest);
+                    console.log(textStatus);
+                    console.log(errorThrown);
                 }
             });
             return stuObj;
@@ -91,7 +95,7 @@
             var count = 0;//计数
             //遍历 - 筛选
             stuSelect=[];//清空
-            if(StatusPara == "所有状态" && gradePara=="所有年级"){//查询条件:所有状态,所有年级
+            if(StatusPara == "所有状态" && gradePara=="所有年级"){ //查询条件:所有状态,所有年级
                 stuSelect=stuObj;
                 count = stuObj.length;
                 //查询结果统计说明
@@ -158,6 +162,8 @@
                     $("#students").html(dom);
                 }
         },
+
+
 
 
         /**

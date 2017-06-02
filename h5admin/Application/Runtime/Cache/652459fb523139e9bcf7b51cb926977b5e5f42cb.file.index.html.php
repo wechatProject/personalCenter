@@ -1,4 +1,25 @@
-<!--学生信息主页:查询+学生信息列表-->
+<?php /* Smarty version Smarty-3.1.6, created on 2017-05-28 20:54:22
+         compiled from "./Application/Home/View/StudentInfo/index.html" */ ?>
+<?php /*%%SmartyHeaderCode:1197674995592ac87ef32ce2-16456510%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '652459fb523139e9bcf7b51cb926977b5e5f42cb' => 
+    array (
+      0 => './Application/Home/View/StudentInfo/index.html',
+      1 => 1495975694,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '1197674995592ac87ef32ce2-16456510',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_592ac87f06ace',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_592ac87f06ace')) {function content_592ac87f06ace($_smarty_tpl) {?><!--学生信息主页:查询+学生信息列表-->
 
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
@@ -8,10 +29,11 @@
     <title>我的学生</title>
     <link rel="stylesheet" href="__PUBLIC__/css/normalize.css"/>
     <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/zepto.alert.css">
     <link rel="stylesheet" href="__PUBLIC__/dist/style/weui.css"/>
     <link rel="stylesheet" href="__PUBLIC__/dist/example/example.css"/>
 </head>
-<body>
+<body >
 
 <div class="wrap">
     <!--查询条件,无标题-->
@@ -57,18 +79,18 @@
     </form>
 
     <!--条件查询结果统计-->
-    <div class="weui-cells__title"><span id="sta-para" class="para">已开题</span>的<span id="grade-para" class="grade-para">2014</span>级学生人数为<span
-            id="total-num" class="total-num">1</span>人
-    </div>
+    <div class="weui-cells__title"><span id="sta-para" class="para">已开题</span>的<span id="grade-para" class="grade-para">2014</span>级学生人数为<span id="total-num" class="total-num">1</span>人</div>
 
     <!--动态加载符合条件的学生列表,base.js-->
     <div id="students"></div>
 </div>
+</div>
 </body>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/zepto.alert.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/config.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/base.js"></script>
 <script type="text/javascript">
-    Basicinfo.queryStuInfo();//条件查询该导师指导的学生列表
+Basicinfo.queryStuInfo();//条件查询该导师指导的学生列表
 </script>
-</html>
+</html><?php }} ?>
