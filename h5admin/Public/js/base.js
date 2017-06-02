@@ -150,10 +150,9 @@
                         dom += "<div class=\"weui-cells  weui-media-box weui-media-box_text\">" +
                             "<a class=\"weui-cell_access\" href=\"stuinfo?stuId=" + stuObj[i].stuid + "&stuSta=" + stuObj[i].status + "&stuInerSta=" + stuObj[i].inerStatus + "&stuThesisSta=" + stuObj[i].thesisStatus + "&stuPassSta=" + stuObj[i].passStatus + "\">" +
                             "<div id=\"stulist\" class=\"stulist weui-cell_access\">" +
-                            "<p class=\"weui-media-box__desc\"><span id=\"stu-grade\">" + stuObj[i].grade + "</span>级&nbsp;&nbsp;&nbsp;<span id=\"stu-name\">" + stuObj[i].name + "</span></p>" +
+                            "<p class=\"weui-media-box__desc\"><span id=\"stu-grade\">" + stuObj[i].grade + "</span>级&nbsp;&nbsp;&nbsp;<span id=\"stu-name\">" + stuObj[i].name + "</span>  " + "<span class='box-line aui-zd'>" +  stuObj[i].status +"</span>"+ "</p>" +
                             "<ul class=\"mweui-media-box__info\">" +
-                            "<li id=\"stu-status\" class=\"weui-media-box__info__meta\">" + stuObj[i].status + "</li>" +
-                            "<li class=\"weui-media-box__info__meta weui-media-box__info__meta_extra\">方向 : <span id=\"researcharea\">" + stuObj[i].researcharea + "</span></li>" +
+                            "<li class=\"weui-media-box__info__meta\">研究方向 : <span id=\"researcharea\">" + stuObj[i].researcharea + "</span></li>" +
                             "</ul>" +
                             "</div>" +
                             "</a>" +
