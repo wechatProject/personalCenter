@@ -27,8 +27,8 @@ class StudentInfoController extends CommonController  {
         Log::write("hello in there",LOG_INFO);
 //        $this->allowMethod(self::GET);
         //使用上述查询条件调用api获取学生列表
-        //$teacherid = $_SESSION['userid'];
-		$teacherid = "1601210606";
+        $teacherid = $_SESSION['userid'];
+		//$teacherid = '1601210606';
         $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 
         $url = "https://api.mysspku.com/index.php/V2/TeacherInfo/getStudents?teacherid=".$teacherid."&token=".$acc;
@@ -104,7 +104,7 @@ class StudentInfoController extends CommonController  {
         //错误代码:0 - 无错误
         $error_code = $arr['errcode'];
         if($error_code == 0){//无错误
-            $result['meta']=array('code'=> "0");
+            $result['meta']=array('code'=>"0");
             $result['stuData']=$stuArr;//所有学生信息列表
             $result['staData']=$staArr;//所有学生状态信息列表:当前状态、当前状态、开题状态、答辩状态
         }else if($error_code == 40901){//token不正确
