@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-06 14:18:28
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-06 14:41:42
          compiled from "./Application/Home/View\StudentInfo\index.html" */ ?>
 <?php /*%%SmartyHeaderCode:1507159360fe53a02d3-32112729%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '14ed165b3983deeb0c0d6a50858076d3bc8529ac' => 
     array (
       0 => './Application/Home/View\\StudentInfo\\index.html',
-      1 => 1496729907,
+      1 => 1496729965,
       2 => 'file',
     ),
   ),
@@ -63,42 +63,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <div class="placeholder">
                         <!--状态选择,默认为全部-->
                         <select id="staSelect" class="mweui-select staSelect" name="staSelect">
-                            <option value="0">所有状态</option>
-                            <option value="1">未实习</option>
-                            <option value="2">实习中</option>
-                            <option value="3">实习结束</option>
-                            <option value="4">已开题</option>
-                            <option value="5">未通过答辩</option>
-                            <option value="6">已通过答辩</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="mweui-flex">
-                <div class="mweui-flex__item1 ">
-                    <div class="placeholder">
-                        <div class="placeholder">
-                            <!--入学年份选择,默认为当前学年(研一的新生)-->
-                            <select id="graSelect2" class="mweui-select graSelect" name="graSelect">
-                                <option value="0">所有年级</option>
-                                <option value="1">2016</option>
-                                <option value="2">2015</option>
-                                <option value="3">2014</option>
-                                <option value="4">2013</option>
-                                <option value="5">2012</option>
-                                <option value="6">2011</option>
-                                <option value="7">2010</option>
-                                <option value="8">2009</option>
-                                <option value="9">2008</option>
-                                <option value="10">2007</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="mweui-flex__item2">
-                    <div class="placeholder">
-                        <!--状态选择,默认为全部-->
-                        <select id="staSelect3" class="mweui-select staSelect" name="staSelect">
                             <option value="0">所有状态</option>
                             <option value="1">未实习</option>
                             <option value="2">实习中</option>

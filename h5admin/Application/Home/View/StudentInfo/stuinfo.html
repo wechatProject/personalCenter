@@ -27,7 +27,7 @@
                 <p>{%$name%}</p>
                 <p>{%$gender%}</p>
             </div>
-            <div class="status weui-cell__ft" style="color: red"><span class="title-font">当前状态 </span><span class="box-line-large aui-zd-large">{%$stuSta%}</span></div>
+            <div class="status weui-cell__ft" style="color: red"><span class="title-font">当前状态 </span><span class="box-line-large aui-zd-large">{%$stuInerSta%}</span><span class="box-line-large aui-zd-large">{%$stuThesisSta%}</span><span class="box-line-large aui-zd-large">{%$stuPassSta%}</span></div>
         </div>
         </div>
 
@@ -112,13 +112,13 @@
             <div class="thesisStatus weui-cell__ft">{%$stuThesisSta%}</div>
         </a>
         <!--答辩信息-->
-        <div class="weui-cell">
+        <a class="weui-cell weui-cell_access" href="__URL__/defense?stuId={%$stuId%}">
             <div class="weui-cell__bd">
                 <p>答辩信息</p>
             </div>
             <!--答辩状态:未通过答辩、已通过答辩-->
-            <div class="passtatus weui-cell__ft">{%$stuPassSta%}&nbsp;&nbsp;&nbsp;</div>
-        </div>
+            <div class="passtatus weui-cell__ft">{%$stuPassSta%}</div>
+        </a>
         <!--就业信息-->
         <a class="weui-cell weui-cell_access" href="__URL__/jobinfo?stuId={%$stuId%}">
             <div class="weui-cell__bd">

@@ -80,21 +80,75 @@
          *
          * 获取后的结果同时存入本地存储localStorage.setItem("stuStr",stuStr);使用时需要转为对象
          */
-        getStudentlist: function(gradePara,StatusPara,stuObj){
-            //动态加载 - 学生列表 - 使用到的变量
-            //stuObj  可将符合条件的学生列表存入(数组对象)
-            //stuObj[i].grade
-            //stuObj[i].name
-            //stuObj[i].researcharea
-            //stuObj[i].stuid
-            //stuObj[i].status          //当前状态
-            //stuObj[i].inerStatus      //实习状态
-            //stuObj[i].thesisStatus    //开题状态
-            //stuObj[i].passStatus      //答辩通过状态
-            //把temp数组(某个学生的信息)作为元素,传入stuSelect数组
+        // getStudentlist: function(gradePara,StatusPara,stuObj){
+        //     //动态加载 - 学生列表 - 使用到的变量
+        //     //stuObj  可将符合条件的学生列表存入(数组对象)
+        //     //stuObj[i].grade
+        //     //stuObj[i].name
+        //     //stuObj[i].researcharea
+        //     //stuObj[i].stuid
+        //     //stuObj[i].status          //当前状态
+        //     //stuObj[i].inerStatus      //实习状态
+        //     //stuObj[i].thesisStatus    //开题状态
+        //     //stuObj[i].passStatus      //答辩通过状态
+        //     //把temp数组(某个学生的信息)作为元素,传入stuSelect数组
+        //     var count = 0;//计数
+        //     //遍历 - 筛选
+        //     stuSelect=[];//清空
+        //     if(StatusPara == "所有状态" && gradePara=="所有年级"){ //查询条件:所有状态,所有年级
+        //         stuSelect=stuObj;
+        //         count = stuObj.length;
+        //         //查询结果统计说明
+        //         $('#sta-para').html("所有状态");
+        //         $('#grade-para').html("所有年");
+        //         $('#total-num').html(count);
+        //     }else {
+        //
+        //         for (var i = 0; i < stuObj.length; i++) {
+        //             if (StatusPara == "所有状态") { //查询条件:所有状态,可选年级
+        //                 if (stuObj[i].grade == gradePara) {
+        //                     stuSelect.push(stuObj[i]);
+        //
+        //                     count++;
+        //                 }
+        //             } else if (gradePara == "所有年级") { //查询条件:可选状态,所有年级
+        //                 if (stuObj[i].status == StatusPara) {
+        //                     stuSelect.push(stuObj[i]);
+        //                     count++;
+        //                 }
+        //             } else if (stuObj[i].grade == gradePara && stuObj[i].status == StatusPara) {//查询条件:可选状态,可选年级
+        //                 stuSelect.push(stuObj[i]);
+        //                 count++;
+        //             }
+        //         }
+        //         //查询结果统计说明
+        //         $('#sta-para').html(StatusPara);
+        //         $('#grade-para').html(gradePara);
+        //         $('#total-num').html(count);
+        //     }
+        //
+        //     return stuSelect;
+        // },
+        getStudentlist: function(gradePara,inerPara,thesisPara,passPara,stuObj){
             var count = 0;//计数
-            //遍历 - 筛选
-            stuSelect=[];//清空
+
+            //stuSelect=[];//清空
+            var tmpObj = stuObj
+
+            for( var i=0; i<tmpObj.length;i++){
+                var stuSelect=[];
+                var newObj
+                if(gradePara == "所有年级"){
+                    newObj = tmpObj
+                    break;
+                }else if (tmpObj[i].grade == gradePara) {
+                    stuSelect.push(tmpObj[i])
+                }
+            }
+
+
+
+
             if(StatusPara == "所有状态" && gradePara=="所有年级"){ //查询条件:所有状态,所有年级
                 stuSelect=stuObj;
                 count = stuObj.length;
@@ -103,13 +157,15 @@
                 $('#grade-para').html("所有年");
                 $('#total-num').html(count);
             }else {
+
                 for (var i = 0; i < stuObj.length; i++) {
-                    if (StatusPara == "所有状态") {//查询条件:所有状态,可选年级
+                    if (StatusPara == "所有状态") { //查询条件:所有状态,可选年级
                         if (stuObj[i].grade == gradePara) {
                             stuSelect.push(stuObj[i]);
+
                             count++;
                         }
-                    } else if (gradePara == "所有年级") {//查询条件:可选状态,所有年级
+                    } else if (gradePara == "所有年级") { //查询条件:可选状态,所有年级
                         if (stuObj[i].status == StatusPara) {
                             stuSelect.push(stuObj[i]);
                             count++;
@@ -127,6 +183,7 @@
 
             return stuSelect;
         },
+
         /**
          * 动态加载学生列表
          * @param stuObj 学生信息列表对象

@@ -1,4 +1,4 @@
-<!--实习信息-->
+<!--答辩信息-->
 
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
@@ -6,88 +6,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>实习信息</title>
+    <title>答辩信息</title>
     <link rel="stylesheet" href="__PUBLIC__/css/normalize.css"/>
     <link rel="stylesheet" href="__PUBLIC__/css/base.css">
     <link rel="stylesheet" href="__PUBLIC__/css/zepto.alert.css">
     <link rel="stylesheet" href="__PUBLIC__/dist/style/weui.css"/>
     <link rel="stylesheet" href="__PUBLIC__/dist/example/example.css"/>
+    <style type="text/css">
+        .wrap .item-list.item-list-al {
+            font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+        }
+    </style>
 </head>
 <body>
 
-<!--实习信息-->
+
 <div class="wrap">
 
     <div class="weui-cells">
 
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p>导师审核</p>
+                <p>标题</p>
             </div>
-            <div class="weui-cell__ft">{%$teacherconfirm%}</div>
+            <div class="weui-cell__ft">{%$title%}</div>
         </div>
 
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p>图书馆审核</p>
+                <p>答辩秘书</p>
             </div>
-            <div class="weui-cell__ft">{%$libraryconfirm%}</div>
+            <div class="weui-cell__ft">{%$assistor%}</div>
         </div>
 
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p>后勤审核</p>
+                <p>秘书邮箱</p>
             </div>
-            <div class="weui-cell__ft">{%$hqconfirm%}</div>
+            <div class="weui-cell__ft">{%$assistormail%}</div>
         </div>
 
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p>财务审核</p>
+                <p>初稿提交状态</p>
             </div>
-            <div class="weui-cell__ft">{%$cwconfirm%}</div>
+            <div class="weui-cell__ft">{%$isdraftsubmit%}</div>
         </div>
 
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p>学工办审核</p>
+                <p>导师审核初稿状态</p>
             </div>
-            <div class="weui-cell__ft">{%$xgbconfirm%}</div>
+            <div class="weui-cell__ft">{%$isteacheragree%}</div>
         </div>
 
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p>实习办审核</p>
+                <p>论文终稿电子版提交状态</p>
             </div>
-            <div class="weui-cell__ft">{%$sxbconfirm%}</div>
+            <div class="weui-cell__ft">{%$eFinalStatus%}</div>
         </div>
 
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p>立项日期</p>
+                <p>论文终稿纸质版提交审核状态</p>
             </div>
-            <div class="weui-cell__ft">{%$lxDate%}</div>
-        </div>
-
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p>实习公司</p>
-            </div>
-            <div class="weui-cell__ft">{%$company%}</div>
-        </div>
-
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p>结项审核状态</p>
-            </div>
-            <div class="weui-cell__ft">{%$endconfirm%}</div>
-        </div>
-
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p>结项日期</p>
-            </div>
-            <div class="weui-cell__ft">{%$jxDate%}</div>
+            <div class="weui-cell__ft">{%$printFinalStatus%}</div>
         </div>
 
 

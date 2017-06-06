@@ -190,10 +190,27 @@ class StudentInfoController extends Controller  {
         $lxDate = $arr['data']['internstarttime'];    //立项日期
         $jxDate = $arr['data']['internendtime'];  //结项日期
         $company = $arr['data']['company'];      //实习公司
+        $teacherconfirm = $arr['data']['teacherconfirm'] == '1' ? '审核通过' : '未审核或未通过';
+        $libraryconfirm = $arr['data']['libraryconfirm'] == '1' ? '审核通过' : '未审核或未通过';
+        $hqconfirm = $arr['data']['hqconfirm'] == '1' ? '审核通过' : '未审核或未通过';
+        $cwconfirm = $arr['data']['cwconfirm'] == '1' ? '审核通过' : '未审核或未通过';
+        $xgbconfirm = $arr['data']['xgbconfirm'] == '1' ? '审核通过' : '未审核或未通过';
+        $sxbconfirm = $arr['data']['sxbconfirm'] == '1' ? '审核通过' : '未审核或未通过';
+        $endconfirm = $arr['data']['endconfirm'] == '1' ? '审核通过' : '未审核或未通过';
+
+
 
         $this->assign('lxDate', $lxDate);
         $this->assign('jxDate', $jxDate);
         $this->assign('company',$company);
+
+        $this->assign('teacherconfirm',$teacherconfirm);
+        $this->assign('libraryconfirm',$libraryconfirm);
+        $this->assign('hqconfirm',$hqconfirm);
+        $this->assign('cwconfirm',$cwconfirm);
+        $this->assign('xgbconfirm',$xgbconfirm);
+        $this->assign('sxbconfirm',$sxbconfirm);
+        $this->assign('endconfirm',$endconfirm);
 
         $this->display();
     }
@@ -209,13 +226,17 @@ class StudentInfoController extends Controller  {
         $json = file_get_contents($url);
         //将json格式转换为数组
         $arr = json_decode($json,true);
-        
+
         //开题信息 - 若取出结果为null,显示无
-        $ktDate = $arr['data']['confirmtime'];  //开题日期
+        $ktDate = $arr['data']['confirmtime'];  //审核时间
         $topic = $arr['data']['title'];         //开题题目
+        $tjStatus = $arr['data']['status'] == '1' ? '已提交': '未提交';
+        $shStatus = $arr['data']['confirm'] == '1' ? '审核通过' : '未审核或审核未通过';
 
         $this->assign('ktDate', $ktDate);
         $this->assign('topic', $topic);
+        $this->assign('tjStatus', $tjStatus);
+        $this->assign('shStatus', $shStatus);
 
         $this->display();
     }
@@ -233,18 +254,54 @@ class StudentInfoController extends Controller  {
         $arr = json_decode($json,true);
 
         //就业信息 - 若取出结果为null,显示无
-        $jobSta = $arr['data']['type'];      //状况
-        $company = $arr['data']['company'];        //单位
-        $position = $arr['data']['position'];  //岗位
-        $industry = $arr['data']['industry'];     //行业
+        $jobSta = $arr['data']['type'];             //就业类型
+        $company = $arr['data']['company'];         //公司名称
+        $position = $arr['data']['position'];       //职位
+        $industry = $arr['data']['industry'];       //所属行业
+        $location = $arr['data']['location'];
+        $salary = $arr['data']['salary'];
 
         $this->assign('jobSta',$jobSta);
         $this->assign('company',$company);
         $this->assign('position',$position);
         $this->assign('industry',$industry);
+        $this->assign('location',$location);
+        $this->assign('salary',$salary);
 
         $this->display();
     }
+
+    public function defense(){
+        //获取学生学号
+        $stuId = $_GET['stuId'];
+        //获取该学生就业信息
+        $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+        $url = "https://api.mysspku.com/index.php/V2/StudentInfo/getPaperProcess?stuid=".$stuId."&token=".$acc;
+        //返回json数据包
+        $json = file_get_contents($url);
+        //将json格式转换为数组
+        $arr = json_decode($json,true);
+
+        $title = $arr['data']['title'];
+        $assistor = $arr['data']['assistor'];
+        $assistormail = $arr['data']['assistormail'];
+        $isdraftsubmit = $arr['data']['isdraftsubmit'] == '1' ? '已提交' : '未提交';
+        $isteacheragree = $arr['data']['isteacheragree'] == '1' ? '审核通过' : '未审核或审核未通过';
+        $eFinalStatus = $arr['data']['eFinalStatus'] == '1' ? '提交成功' : '提交失败或未提交';
+        $printFinalStatus = $arr['data']['printFinalStatus'] == '1' ? '提交成功' : '提交失败或未提交';
+
+        $this->assign('title',$title);
+        $this->assign('assistor',$assistor);
+        $this->assign('assistormail',$assistormail);
+        $this->assign('isdraftsubmit',$isdraftsubmit);
+        $this->assign('isteacheragree',$isteacheragree);
+        $this->assign('eFinalStatus',$eFinalStatus);
+        $this->assign('printFinalStatus',$printFinalStatus);
+
+        $this->display();
+
+    }
+
 }
 
 ?>
