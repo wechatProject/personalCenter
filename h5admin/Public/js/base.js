@@ -148,9 +148,9 @@
                     for (var i = 0; i < stuObj.length; i++) {
 
                         dom += "<div class=\"weui-cells  weui-media-box weui-media-box_text\">" +
-                            "<a class=\"weui-cell_access\" href=\"stuinfo?stuId=" + stuObj[i].stuid + "&stuSta=" + stuObj[i].status + "&stuInerSta=" + stuObj[i].inerStatus + "&stuThesisSta=" + stuObj[i].thesisStatus + "&stuPassSta=" + stuObj[i].passStatus + "\">" +
+                            "<a class=\"weui-cell_access\" href=\"stuinfo?stuId=" + stuObj[i].stuid + "&stuInerSta=" + stuObj[i].inerStatus + "&stuThesisSta=" + stuObj[i].thesisStatus + "&stuPassSta=" + stuObj[i].passStatus + "\">" +
                             "<div id=\"stulist\" class=\"stulist weui-cell_access\">" +
-                            "<p class=\"weui-media-box__desc\"><span id=\"stu-grade\">" + stuObj[i].grade + "</span>级&nbsp;&nbsp;&nbsp;<span id=\"stu-name\">" + stuObj[i].name + "</span>  " + "<span class='box-line aui-zd'>" +  stuObj[i].status +"</span>"+ "</p>" +
+                            "<p class=\"weui-media-box__desc\"><span id=\"stu-grade\">" + stuObj[i].grade + "</span>级&nbsp;&nbsp;&nbsp;<span id=\"stu-name\">" + stuObj[i].name + "</span>  " + "<span class='box-line aui-zd'>" +  stuObj[i].inerStatus +"</span>"+ "<span class='box-line aui-zd'>" +  stuObj[i].thesisStatus +"</span>"+"<span class='box-line aui-zd'>" +  stuObj[i].passStatus +"</span>"+"</p>" +
                             "<ul class=\"mweui-media-box__info\">" +
                             "<li class=\"weui-media-box__info__meta\">研究方向 : <span id=\"researcharea\">" + stuObj[i].researcharea + "</span></li>" +
                             "</ul>" +
