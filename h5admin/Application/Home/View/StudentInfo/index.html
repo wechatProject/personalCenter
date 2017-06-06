@@ -40,13 +40,36 @@
                 </div>
                 <div class="mweui-flex__item2">
                     <div class="placeholder">
-                        <!--状态选择,默认为全部-->
-                        <select id="staSelect" class="mweui-select staSelect" name="staSelect">
-                            <option value="0">所有状态</option>
-                            <option value="1">未实习</option>
-                            <option value="2">实习中</option>
-                            <option value="3">实习结束</option>
-                            <option value="4">已开题</option>
+                        <!--实习状态选择,默认为全部-->
+                        <select id="inerSelect" class="mweui-select staSelect" name="inerSelect">
+                            <option value="0">全部实习状态</option>
+                            <option value="1">未立项</option>
+                            <option value="2">已立项</option>
+                            <option value="3">已结项</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page__bd mpage__bd_spacing">
+            <div class="mweui-flex">
+                <div class="mweui-flex__item1 ">
+                    <div class="placeholder">
+                        <div class="placeholder">
+                            <!--开题状态选择,默认为全部-->
+                            <select id="thesisSelect" class="mweui-select staSelect" name="thesisSelect">
+                                <option value="0">全部开题状态</option>
+                                <option value="1">未开题</option>
+                                <option value="2">已开题</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="mweui-flex__item2">
+                    <div class="placeholder">
+                        <!--答辩状态选择,默认为全部-->
+                        <select id="passSelect" class="mweui-select staSelect" name="passSelect">
+                            <option value="0">全部答辩状态</option>
                             <option value="5">未通过答辩</option>
                             <option value="6">已通过答辩</option>
                         </select>
@@ -57,7 +80,7 @@
     </form>
 
     <!--条件查询结果统计-->
-    <div class="weui-cells__title"><span id="sta-para" class="para">已开题</span>的<span id="grade-para" class="grade-para">2014</span>级学生人数为<span
+    <div class="weui-cells__title"><span id="iner-para" class="para">已立项</span><span id="thesis-para" class="para">已开题</span><span id="pass-para" class="para">已通过答辩</span>的<span id="grade-para" class="grade-para">2014</span>级学生人数为<span
             id="total-num" class="total-num">1</span>人
     </div>
 

@@ -10,13 +10,15 @@
         queryStuInfo: function(){
             //默认查询条件
             var gradePara = "所有年级";//年级,默认当前年级,研一
-            var statusPara = "所有状态";//状态,默认所有状态
+            var inerPara = "全部实习状态";//状态,默认所有状态
+            var thesisPara = "全部开题状态";//状态,默认所有状态
+            var passPara = "全部答辩状态";//状态,默认所有状态
 
             //获取所有学生信息列表
             var allstuObj = Basicinfo.getAllStudentlist();
 
             //获取符合条件的学生信息列表
-            var stuObj = Basicinfo.getStudentlist(gradePara,statusPara,allstuObj);
+            var stuObj = Basicinfo.getStudentlist(gradePara,inerPara,thesisPara,passPara,allstuObj);
             //动态加载符合条件的学生列表
             Basicinfo.showStuList(stuObj);
 
@@ -24,15 +26,29 @@
             $("#graSelect").change(function(){
                 gradePara = $("select[name=graSelect] option").not(function(){ return !this.selected }).text();
                 //获取符合条件的学生信息列表
-                var stuObj = Basicinfo.getStudentlist(gradePara,statusPara,allstuObj);
+                var stuObj = Basicinfo.getStudentlist(gradePara,inerPara,thesisPara,passPara,allstuObj);
                 //动态加载符合条件的学生列表
                 Basicinfo.showStuList(stuObj)
             });
 
-            $("#staSelect").change(function(){
-                statusPara = $("select[name=staSelect] option").not(function(){ return !this.selected }).text();
+            $("#inerSelect").change(function(){
+                inerPara = $("select[name=inerSelect] option").not(function(){ return !this.selected }).text();
                 //获取符合条件的学生信息列表
-                var stuObj = Basicinfo.getStudentlist(gradePara,statusPara,allstuObj);
+                var stuObj = Basicinfo.getStudentlist(gradePara,inerPara,thesisPara,passPara,allstuObj);
+                //动态加载符合条件的学生列表
+                Basicinfo.showStuList(stuObj)
+            });
+            $("#thesisSelect").change(function(){
+                thesisPara = $("select[name=thesisSelect] option").not(function(){ return !this.selected }).text();
+                //获取符合条件的学生信息列表
+                var stuObj = Basicinfo.getStudentlist(gradePara,inerPara,thesisPara,passPara,allstuObj);
+                //动态加载符合条件的学生列表
+                Basicinfo.showStuList(stuObj)
+            });
+            $("#passSelect").change(function(){
+                passPara = $("select[name=passSelect] option").not(function(){ return !this.selected }).text();
+                //获取符合条件的学生信息列表
+                var stuObj = Basicinfo.getStudentlist(gradePara,inerPara,thesisPara,passPara,allstuObj);
                 //动态加载符合条件的学生列表
                 Basicinfo.showStuList(stuObj)
             });
@@ -57,15 +73,20 @@
                 success: function(data){
                     staObj = data.staData;//暂时未用到
                     stuObj = data.stuData;
-                    var meta = data.meta;
-                    if(meta.code == '0'){
-                        var staStr = JSON.stringify(staObj);//对象转为json字符串,localStorage只支持字符串
-                        var stuStr = JSON.stringify(stuObj);
-                        localStorage.setItem("staStr",staStr);//暂时未使用到
-                        localStorage.setItem("stuStr",stuStr);//暂时未使用到
+                    if(!stuObj){//取到数据
+                        console.log("未取到学生信息列表!");
+                    }else{//未取到数据
+                        var meta = data.meta;
+                        if(meta.code == '0'){
+                            var staStr = JSON.stringify(staObj);//对象转为json字符串,localStorage只支持字符串
+                            var stuStr = JSON.stringify(stuObj);
+                            localStorage.setItem("staStr",staStr);//暂时未使用到
+                            localStorage.setItem("stuStr",stuStr);//暂时未使用到
+                        }
                     }
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown){
+                    //提示出错
                     console.log("ajax error");
                     console.log(XMLHttpRequest);
                     console.log(textStatus);
@@ -74,13 +95,18 @@
             });
             return stuObj;
         },
+
         /**
          * 获取符合条件的学生信息列表
-         * @returns 符合条件的学生列表
-         *
+         * @param gradePara     年级
+         * @param inerSelect    实习状态
+         * @param thesisSelect  开题状态
+         * @param passSelect    答辩状态
+         * @param stuObj        全部学生列表
+         * @returns {Array}     符合条件的学生列表
          * 获取后的结果同时存入本地存储localStorage.setItem("stuStr",stuStr);使用时需要转为对象
          */
-        getStudentlist: function(gradePara,StatusPara,stuObj){
+        getStudentlist: function(gradePara,inerPara,thesisPara,passPara,stuObj){
             //动态加载 - 学生列表 - 使用到的变量
             //stuObj  可将符合条件的学生列表存入(数组对象)
             //stuObj[i].grade
@@ -91,41 +117,71 @@
             //stuObj[i].inerStatus      //实习状态
             //stuObj[i].thesisStatus    //开题状态
             //stuObj[i].passStatus      //答辩通过状态
-            //把temp数组(某个学生的信息)作为元素,传入stuSelect数组
-            var count = 0;//计数
             //遍历 - 筛选
-            stuSelect=[];//清空
-            if(StatusPara == "所有状态" && gradePara=="所有年级"){ //查询条件:所有状态,所有年级
-                stuSelect=stuObj;
-                count = stuObj.length;
-                //查询结果统计说明
-                $('#sta-para').html("所有状态");
-                $('#grade-para').html("所有年");
-                $('#total-num').html(count);
-            }else {
-                for (var i = 0; i < stuObj.length; i++) {
-                    if (StatusPara == "所有状态") {//查询条件:所有状态,可选年级
-                        if (stuObj[i].grade == gradePara) {
-                            stuSelect.push(stuObj[i]);
-                            count++;
+            if(!stuObj){//学生信息列表为空
+                console.log("未取到学生信息列表!");
+            }else{//学生信息列表非空
+
+                //筛选 -- 按年级
+                copy = stuObj;
+                select = [];
+                if(gradePara == "所有年级") {
+                    select = copy;
+                } else {
+                    for (var i = 0; i < copy.length; i++) {//添加符合条件的元素 -- 年级
+                        if (copy[i].grade == gradePara) {
+                            select.push(copy[i]);
                         }
-                    } else if (gradePara == "所有年级") {//查询条件:可选状态,所有年级
-                        if (stuObj[i].status == StatusPara) {
-                            stuSelect.push(stuObj[i]);
-                            count++;
-                        }
-                    } else if (stuObj[i].grade == gradePara && stuObj[i].status == StatusPara) {//查询条件:可选状态,可选年级
-                        stuSelect.push(stuObj[i]);
-                        count++;
                     }
                 }
-                //查询结果统计说明
-                $('#sta-para').html(StatusPara);
-                $('#grade-para').html(gradePara);
-                $('#total-num').html(count);
-            }
 
-            return stuSelect;
+                //筛选 -- 按实习状态
+                copy = select;
+                select = [];
+                if(inerPara == "全部实习状态") {
+                    select = copy;
+                } else {
+                    for (var i = 0; i < copy.length; i++) {//添加符合条件的元素 -- 实习状态
+                        if (copy[i].inerStatus == inerPara) {
+                            select.push(copy[i]);
+                        }
+                    }
+                }
+
+                //筛选 -- 按开题状态
+                copy = select;
+                select = [];
+                if(thesisPara == "全部开题状态") {
+                    select = copy;
+                } else {
+                    for (var i = 0; i < copy.length; i++) {//添加符合条件的元素 -- 实习状态
+                        if (copy[i].thesisStatus == thesisPara) {
+                            select.push(copy[i]);
+                        }
+                    }
+                }
+
+                //筛选 -- 按答辩状态
+                copy = select;
+                select = [];
+                if(passPara == "全部答辩状态") {
+                    select = copy;
+                } else {
+                    for (var i = 0; i < copy.length; i++) {//添加符合条件的元素 -- 实习状态
+                        if (copy[i].passStatus == passPara) {
+                            select.push(copy[i]);
+                        }
+                    }
+                }
+
+                //查询结果统计说明
+                $('#iner-para').html(inerPara);
+                $('#thesis-para').html(thesisPara);
+                $('#pass-para').html(passPara);
+                $('#grade-para').html(gradePara);
+                $('#total-num').html(select.length);
+            }
+            return select;
         },
         /**
          * 动态加载学生列表
@@ -144,7 +200,10 @@
         showStuList: function(stuObj){
             //动态加载页面 -- 显示符合条件的学生列表
                 var dom = '';
-                if (stuObj) {
+            // if(stuObj[i].status == "已开题"){
+            //     stuObj[i].status = "";
+            // }
+            if (stuObj) {
                     for (var i = 0; i < stuObj.length; i++) {
 
                         dom += "<div class=\"weui-cells  weui-media-box weui-media-box_text\">" +
