@@ -27,29 +27,17 @@ class StudentInfoController extends Controller  {
     //获取该导师指导下的学生信息列表(接收前端StudentInfo/index.html的ajax请求)
     public function getAllStduentlist() {
 
-//        Log::write("hello in there",LOG_INFO);
-
         //使用上述查询条件调用api获取学生列表
         $teacherid = $_SESSION['userid'];
-
 
         $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 
         $url = "https://api.mysspku.com/index.php/V2/TeacherInfo/getStudents?teacherid=".$teacherid."&token=".$acc;
 
-//        echo "<br>url地址";
-//        echo $url;
-//        echo "<br>acc参数";
-//        echo $acc;
-//        echo "<br>acc参数结束";
-
         //返回json数据包
         $json = file_get_contents($url);
         //将json格式转换为数组
         $arr = json_decode($json,true);
-
-
-//        var_dump($arr);
 
 
         //所有学生列表
@@ -123,7 +111,7 @@ class StudentInfoController extends Controller  {
         } else{ //其他错误
             $result['meta']=array('code' => "49999", 'error' => "error", 'info' => "error");
         }
-        $test = json_encode($result);
+//        $test = json_encode($result);
 //        Log::write("hello in there!!! $test ",LOG_INFO);
 
         $this->ajaxReturn($result);
@@ -305,7 +293,6 @@ class StudentInfoController extends Controller  {
         $this->assign('printFinalStatus',$printFinalStatus);
 
         $this->display();
-
     }
 
 }

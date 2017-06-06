@@ -106,97 +106,6 @@
          * @returns {Array}     符合条件的学生列表
          * 获取后的结果同时存入本地存储localStorage.setItem("stuStr",stuStr);使用时需要转为对象
          */
-<<<<<<< HEAD
-        // getStudentlist: function(gradePara,StatusPara,stuObj){
-        //     //动态加载 - 学生列表 - 使用到的变量
-        //     //stuObj  可将符合条件的学生列表存入(数组对象)
-        //     //stuObj[i].grade
-        //     //stuObj[i].name
-        //     //stuObj[i].researcharea
-        //     //stuObj[i].stuid
-        //     //stuObj[i].status          //当前状态
-        //     //stuObj[i].inerStatus      //实习状态
-        //     //stuObj[i].thesisStatus    //开题状态
-        //     //stuObj[i].passStatus      //答辩通过状态
-        //     //把temp数组(某个学生的信息)作为元素,传入stuSelect数组
-        //     var count = 0;//计数
-        //     //遍历 - 筛选
-        //     stuSelect=[];//清空
-        //     if(StatusPara == "所有状态" && gradePara=="所有年级"){ //查询条件:所有状态,所有年级
-        //         stuSelect=stuObj;
-        //         count = stuObj.length;
-        //         //查询结果统计说明
-        //         $('#sta-para').html("所有状态");
-        //         $('#grade-para').html("所有年");
-        //         $('#total-num').html(count);
-        //     }else {
-        //
-        //         for (var i = 0; i < stuObj.length; i++) {
-        //             if (StatusPara == "所有状态") { //查询条件:所有状态,可选年级
-        //                 if (stuObj[i].grade == gradePara) {
-        //                     stuSelect.push(stuObj[i]);
-        //
-        //                     count++;
-        //                 }
-        //             } else if (gradePara == "所有年级") { //查询条件:可选状态,所有年级
-        //                 if (stuObj[i].status == StatusPara) {
-        //                     stuSelect.push(stuObj[i]);
-        //                     count++;
-        //                 }
-        //             } else if (stuObj[i].grade == gradePara && stuObj[i].status == StatusPara) {//查询条件:可选状态,可选年级
-        //                 stuSelect.push(stuObj[i]);
-        //                 count++;
-        //             }
-        //         }
-        //         //查询结果统计说明
-        //         $('#sta-para').html(StatusPara);
-        //         $('#grade-para').html(gradePara);
-        //         $('#total-num').html(count);
-        //     }
-        //
-        //     return stuSelect;
-        // },
-        getStudentlist: function(gradePara,inerPara,thesisPara,passPara,stuObj){
-            var count = 0;//计数
-
-            //stuSelect=[];//清空
-            var tmpObj = stuObj
-
-            for( var i=0; i<tmpObj.length;i++){
-                var stuSelect=[];
-                var newObj
-                if(gradePara == "所有年级"){
-                    newObj = tmpObj
-                    break;
-                }else if (tmpObj[i].grade == gradePara) {
-                    stuSelect.push(tmpObj[i])
-                }
-            }
-
-
-
-
-            if(StatusPara == "所有状态" && gradePara=="所有年级"){ //查询条件:所有状态,所有年级
-                stuSelect=stuObj;
-                count = stuObj.length;
-                //查询结果统计说明
-                $('#sta-para').html("所有状态");
-                $('#grade-para').html("所有年");
-                $('#total-num').html(count);
-            }else {
-
-                for (var i = 0; i < stuObj.length; i++) {
-                    if (StatusPara == "所有状态") { //查询条件:所有状态,可选年级
-                        if (stuObj[i].grade == gradePara) {
-                            stuSelect.push(stuObj[i]);
-
-                            count++;
-                        }
-                    } else if (gradePara == "所有年级") { //查询条件:可选状态,所有年级
-                        if (stuObj[i].status == StatusPara) {
-                            stuSelect.push(stuObj[i]);
-                            count++;
-=======
         getStudentlist: function(gradePara,inerPara,thesisPara,passPara,stuObj){
             //动态加载 - 学生列表 - 使用到的变量
             //stuObj  可将符合条件的学生列表存入(数组对象)
@@ -214,8 +123,8 @@
             }else{//学生信息列表非空
 
                 //筛选 -- 按年级
-                copy = stuObj;
-                select = [];
+                var copy = stuObj;
+                var select = [];
                 if(gradePara == "所有年级") {
                     select = copy;
                 } else {
@@ -248,7 +157,6 @@
                     for (var i = 0; i < copy.length; i++) {//添加符合条件的元素 -- 实习状态
                         if (copy[i].thesisStatus == thesisPara) {
                             select.push(copy[i]);
->>>>>>> 6bba44ac6f0885238f7d9c0616c518be65833382
                         }
                     }
                 }
@@ -290,28 +198,28 @@
          * stuObj[i].thesisStatus    //开题状态
          * stuObj[i].passStatus      //答辩通过状态
          */
-        showStuList: function(stuObj){
+        showStuList: function (stuObj) {
             //动态加载页面 -- 显示符合条件的学生列表
-                var dom = '';
+            var dom = '';
             // if(stuObj[i].status == "已开题"){
             //     stuObj[i].status = "";
             // }
             if (stuObj) {
-                    for (var i = 0; i < stuObj.length; i++) {
+                for (var i = 0; i < stuObj.length; i++) {
 
-                        dom += "<div class=\"weui-cells  weui-media-box weui-media-box_text\">" +
-                            "<a class=\"weui-cell_access\" href=\"stuinfo?stuId=" + stuObj[i].stuid + "&stuInerSta=" + stuObj[i].inerStatus + "&stuThesisSta=" + stuObj[i].thesisStatus + "&stuPassSta=" + stuObj[i].passStatus + "\">" +
-                            "<div id=\"stulist\" class=\"stulist weui-cell_access\">" +
-                            "<p class=\"weui-media-box__desc\"><span id=\"stu-grade\">" + stuObj[i].grade + "</span>级&nbsp;&nbsp;&nbsp;<span id=\"stu-name\">" + stuObj[i].name + "</span>  " + "<span class='box-line aui-zd'>" +  stuObj[i].inerStatus +"</span>"+ "<span class='box-line aui-zd'>" +  stuObj[i].thesisStatus +"</span>"+"<span class='box-line aui-zd'>" +  stuObj[i].passStatus +"</span>"+"</p>" +
-                            "<ul class=\"mweui-media-box__info\">" +
-                            "<li class=\"weui-media-box__info__meta\">研究方向 : <span id=\"researcharea\">" + stuObj[i].researcharea + "</span></li>" +
-                            "</ul>" +
-                            "</div>" +
-                            "</a>" +
-                            "</div>";
-                    }
-                    $("#students").html(dom);
+                    dom += "<div class=\"weui-cells  weui-media-box weui-media-box_text\">" +
+                        "<a class=\"weui-cell_access\" href=\"stuinfo?stuId=" + stuObj[i].stuid + "&stuInerSta=" + stuObj[i].inerStatus + "&stuThesisSta=" + stuObj[i].thesisStatus + "&stuPassSta=" + stuObj[i].passStatus + "\">" +
+                        "<div id=\"stulist\" class=\"stulist weui-cell_access\">" +
+                        "<p class=\"weui-media-box__desc\"><span id=\"stu-grade\">" + stuObj[i].grade + "</span>级&nbsp;&nbsp;&nbsp;<span id=\"stu-name\">" + stuObj[i].name + "</span>  " + "<span class='box-line aui-zd'>" + stuObj[i].inerStatus + "</span>" + "<span class='box-line aui-zd'>" + stuObj[i].thesisStatus + "</span>" + "<span class='box-line aui-zd'>" + stuObj[i].passStatus + "</span>" + "</p>" +
+                        "<ul class=\"mweui-media-box__info\">" +
+                        "<li class=\"weui-media-box__info__meta\">研究方向 : <span id=\"researcharea\">" + stuObj[i].researcharea + "</span></li>" +
+                        "</ul>" +
+                        "</div>" +
+                        "</a>" +
+                        "</div>";
                 }
+                $("#students").html(dom);
+            }
         },
 
 
