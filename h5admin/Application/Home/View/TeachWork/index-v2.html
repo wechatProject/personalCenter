@@ -1,4 +1,5 @@
 <!--工作量统计 -- 授课信息主页:查询条件+课程列表-->
+<!--display方式-->
 
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
@@ -18,73 +19,63 @@
 <div class="wrap">
     <!--<br>-->
     <!--查询条件-->
-    <form id="searchTeachwork" method="post" action="__URL__/index">
-        <div class="page__bd mpage__bd_spacing">
-            <div class="mweui-flex">
-                <div class="mweui-flex__item1 ">
-                    <div class="placeholder">
-                        <div class="placeholder">
-                            <!--入学年份选择,默认为当前学年(研一的新生)-->
-                            <select class="mweui-select" name="select2">
-                                <option value="0">所有学年</option>
-                                <option value="1">16-17学年</option>
-                                <option value="2">15-16学年</option>
-                                <option value="3">14-15学年</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="mweui-flex__item2">
-                    <div class="placeholder">
-                        <!--学期选择,默认为所有,1 - 秋季学期 , 2 春季学期-->
-                        <select class="mweui-select" name="select2">
-                            <option value="0">所有学期</option>
-                            <option value="1">第一学期</option>
-                            <option value="2">第二学期</option>
-                        </select>
-                    </div>
+    <!--flex四列布局-->
+    <div class="mweui-cells2">
+        <div class="mweui-flex">
+            <div class="mweui-flex__item">
+                <div class="placeholder">
+                    <!--入学年份选择,默认为当前学年(研一的新生)-->
+                    <b>
+                    <select id="graSelect" class="mweui-select graSelect" name="graSelect">
+                        <option value="1">2016-2017</option>
+                        <option value="2">2015-2016</option>
+                        <option value="3">2014-2015</option>
+                    </select>
+                    <span>学年课程列表</span>
+                    </b>
                 </div>
             </div>
         </div>
-    </form>
+    </div>
+
 
     <!--条件查询结果-->
-    <div class="weui-cells__title"><span>16-17学年度</span><span>第二学期</span>授课总课时为<span class="total-num">48</span></div>
+    <!--<div class="weui-cells__title"><span>16-17学年度</span><span>第二学期</span>授课总课时为<span class="total-num">48</span></div>-->
 
     <!--课程列表-->
+    <!--春季课程列表-->
+    <div class="mweui-cells__title"><b><span>2017年</span>春季学期</b></div>
     <div class="weui-cells">
-
-        <!--课程1-->
-        <div class="weui-media-box weui-media-box_text">
-            <!--课程名-->
-            <p class="mweui-media-box__desc">互联网软件开发技术实践</p>
-            <ul class="weui-media-box__info">
-                <!--选课人数-->
-                <li class="weui-media-box__info__meta">选课人数: 40人</li>
-            </ul>
-            <ul class="weui-media-box__info">
-                <!--课程学时-->
-                <li class="weui-media-box__info__meta"><span>48课时</span></li>
-                <!--开课时段-->
-                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><span>16-17学年</span> <span>第二学期</span></li>
-            </ul>
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p><span>互联网软件开发技术实践</span><span class="course-item" style="float: right;padding-right: 30px">32课时</span></p>
+            </div>
+            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">36人</div>
         </div>
-
-        <!--课程2-->
-        <div class="weui-media-box weui-media-box_text">
-            <!--课程名-->
-            <p class="mweui-media-box__desc">海量数据处理</p>
-            <ul class="weui-media-box__info">
-                <!--选课人数-->
-                <li class="weui-media-box__info__meta">选课人数: 40人</li>
-            </ul>
-            <ul class="weui-media-box__info">
-                <!--课程学时-->
-                <li class="weui-media-box__info__meta"><span>48课时</span></li>
-                <!--开课时段-->
-                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><span>16-17学年</span> <span>第二学期</span></li>
-            </ul>
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p><span>海量数据处理</span><span class="course-item" style="float: right;padding-right: 30px">32课时</span></p>
+            </div>
+            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">36人</div>
         </div>
+    </div>
+
+    <!--秋季课程列表-->
+    <div class="mweui-cells__title"><b><span>2016年</span>秋季学期</b></div>
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p><span>互联网软件开发技术实践</span><span class="course-item" style="float: right;padding-right: 30px">32课时</span></p>
+            </div>
+            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">36人</div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p><span>海量数据处理</span><span class="course-item" style="float: right;padding-right: 30px">32课时</span></p>
+            </div>
+            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">36人</div>
+        </div>
+    </div>
 
     </div>
 </div>

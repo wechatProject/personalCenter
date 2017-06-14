@@ -1,5 +1,5 @@
 <!--工作量统计 -- 指导论文:查询条件+ 通过答辩学生列表-->
-
+<!--display方式-->
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
 <head lang="en">
@@ -19,71 +19,54 @@
 <div class="wrap">
     <!--<br>-->
     <!--查询条件-->
-    <form id="searchTeachwork" method="post" action="__URL__/index">
-        <div class="page__bd mpage__bd_spacing">
-            <div class="mweui-flex">
-                <div class="mweui-flex__item1 ">
-                    <div class="placeholder">
-                        <div class="placeholder">
-                            <!--入学年份选择,默认为当前学年(研一的新生)-->
-                            <select class="mweui-select" name="select2">
-                                <option value="0">所有学年</option>
-                                <option value="1">2017年</option>
-                                <option value="2">2016年</option>
-                                <option value="3">2015年</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="mweui-flex__item2">
-                    <div class="placeholder">
-                        <!--学期选择,默认为所有,1 - 秋季学期 , 2 春季学期-->
-                        <select class="mweui-select" name="select2">
-                            <option value="0">所有时段</option>
-                            <option value="1">1月</option>
-                            <option value="2">7月</option>
+    <!--flex四列布局-->
+    <div class="mweui-cells2">
+        <div class="mweui-flex">
+            <div class="mweui-flex__item">
+                <div class="placeholder">
+                    <!--入学年份选择,默认为当前学年(研一的新生)-->
+                    <b>
+                        <select id="graSelect" class="mweui-select graSelect" name="graSelect">
+                            <option value="1">2016-2017</option>
+                            <option value="2">2015-2016</option>
+                            <option value="3">2014-2015</option>
                         </select>
-                    </div>
+                        <span>学年指导论文工作量</span>
+                    </b>
                 </div>
             </div>
         </div>
-    </form>
-
-    <!--条件查询结果(表述的不准确,根据实际情况再修改)-->
-    <div class="weui-cells__title"><span>2017年</span><span>7月</span>通过论文答辩的学生为<span class="total-num">10</span>人</div>
-    <!--通过答辩的学生列表-->
-    <div class="weui-cells">
-        <!--学生1-->
-        <div class="weui-media-box weui-media-box_text">
-            <!--学生年级、姓名-->
-            <p class="mweui-media-box__desc"><span>2016级</span>&nbsp;&nbsp;<span>徐凯文</span></p>
-            <ul class="weui-media-box__info">
-                <!--研究领域-->
-                <li class="weui-media-box__info__meta">方向:<span>计算机软件开发</span></li>
-            </ul>
-            <ul class="weui-media-box__info">
-                <li class="weui-media-box__info__meta">通过答辩</li>
-                <!--答辩时间-->
-                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">答辩时间 <span>2017年7月</span></li>
-            </ul>
-        </div>
-
-        <!--学生2-->
-        <div class="weui-media-box weui-media-box_text">
-            <!--学生年级、姓名-->
-            <p class="mweui-media-box__desc"><span>2016级</span>&nbsp;&nbsp;<span>张三</span></p>
-            <ul class="weui-media-box__info">
-                <!--研究领域-->
-                <li class="weui-media-box__info__meta">方向:<span>软件工程技术</span></li>
-            </ul>
-            <ul class="weui-media-box__info">
-                <li class="weui-media-box__info__meta">通过答辩</li>
-                <!--答辩时间-->
-                <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">答辩时间 <span>2017年7月</span></li>
-            </ul>
-        </div>
-
     </div>
+
+    <!--条件查询结果-->
+    <!--<div class="weui-cells__title"><span>16-17学年度</span><span>第二学期</span>授课总课时为<span class="total-num">48</span></div>-->
+
+    <!--遍历:2017年1月,2017年7月,每个答辩时间段的记录可能有1条或2条(北京、无锡)-->
+
+    <!--列表-->
+    <div class="mweui-cells__title"><b><span id="time_name" class="">2017年1月论文答辩</span></b></div>
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p><span>通过论文答辩16人</span><span class="course-item" style="float: right;padding-right: 30px">工作量13.2</span></p>
+            </div>
+            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">北京</div>
+        </div>
+    </div>
+
+    <div class="mweui-cells__title"><b><span id="time_name2" class="">2017年7月论文答辩</span></b></div>
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p><span>通过论文答辩16人</span><span class="course-item" style="float: right;padding-right: 30px">工作量13.2</span></p>
+            </div>
+            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">北京</div>
+        </div>
+    </div>
+
+
+
+</div>
 </div>
 </div>
 </body>
