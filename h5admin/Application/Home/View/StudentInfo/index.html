@@ -14,78 +14,70 @@
 <body>
 
 <div class="wrap">
-    <!--查询条件,无标题-->
-    <form id="searchStudent" method="post" action="__URL__/index">
-        <div class="page__bd mpage__bd_spacing">
-            <div class="mweui-flex">
-                <div class="mweui-flex__item1 ">
-                    <div class="placeholder">
-                        <div class="placeholder">
-                            <!--入学年份选择,默认为当前学年(研一的新生)-->
-                            <select id="graSelect" class="mweui-select graSelect" name="graSelect">
-                                <option value="0">所有年级</option>
-                                <option value="1">2016</option>
-                                <option value="2">2015</option>
-                                <option value="3">2014</option>
-                                <option value="4">2013</option>
-                                <option value="5">2012</option>
-                                <option value="6">2011</option>
-                                <option value="7">2010</option>
-                                <option value="8">2009</option>
-                                <option value="9">2008</option>
-                                <option value="10">2007</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="mweui-flex__item2">
-                    <div class="placeholder">
-                        <!--实习状态选择,默认为全部-->
-                        <select id="inerSelect" class="mweui-select staSelect" name="inerSelect">
-                            <option value="0">全部实习状态</option>
-                            <option value="1">未立项</option>
-                            <option value="2">已立项</option>
-                            <option value="3">已结项</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="page__bd mpage__bd_spacing">
-            <div class="mweui-flex">
-                <div class="mweui-flex__item1 ">
-                    <div class="placeholder">
-                        <div class="placeholder">
-                            <!--开题状态选择,默认为全部-->
-                            <select id="thesisSelect" class="mweui-select staSelect" name="thesisSelect">
-                                <option value="0">全部开题状态</option>
-                                <option value="1">未开题</option>
-                                <option value="2">已开题</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="mweui-flex__item2">
-                    <div class="placeholder">
-                        <!--答辩状态选择,默认为全部-->
-                        <select id="passSelect" class="mweui-select staSelect" name="passSelect">
-                            <option value="0">全部答辩状态</option>
-                            <option value="5">未通过答辩</option>
-                            <option value="6">已通过答辩</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
 
-    <!--条件查询结果统计-->
-    <div class="weui-cells__title"><span id="iner-para" class="para">已立项</span><span id="thesis-para" class="para">已开题</span><span id="pass-para" class="para">已通过答辩</span>的<span id="grade-para" class="grade-para">2014</span>级学生人数为<span
-            id="total-num" class="total-num">1</span>人
+    <!--flex四列布局-->
+    <div class="mweui-cells2">
+        <div class="mweui-flex">
+            <div class="mweui-flex__item">
+                <div class="placeholder">
+                    <!--入学年份选择,默认为当前学年(研一的新生)-->
+                    <select id="graSelect" class="mweui-select graSelect" name="graSelect">
+                        <option value="0">入学年份</option>
+                        <option value="1">2016</option>
+                        <option value="2">2015</option>
+                        <option value="3">2014</option>
+                        <option value="4">2013</option>
+                        <option value="5">2012</option>
+                        <option value="6">2011</option>
+                        <option value="7">2010</option>
+                        <option value="8">2009</option>
+                        <option value="9">2008</option>
+                        <option value="10">2007</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mweui-flex__item">
+                <div class="placeholder">
+                    <!--实习状态选择,默认为全部-->
+                    <select id="inerSelect" class="mweui-select staSelect" name="inerSelect">
+                        <option value="0">实习状态</option>
+                        <option value="1">未立项</option>
+                        <option value="2">已立项</option>
+                        <option value="3">已结项</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mweui-flex__item">
+                <div class="placeholder">
+                    <!--开题状态选择,默认为全部-->
+                    <select id="thesisSelect" class="mweui-select staSelect" name="thesisSelect">
+                        <option value="0">开题状态</option>
+                        <option value="1">未开题</option>
+                        <option value="2">已开题</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mweui-flex__item">
+                <div class="placeholder">
+                    <!--答辩状态选择,默认为全部-->
+                    <select id="passSelect" class="mweui-select staSelect" name="passSelect">
+                        <option value="0">答辩状态</option>
+                        <option value="5">未通过答辩</option>
+                        <option value="6">已通过答辩</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!--条件查询结果统计-->
+    <div class="mweui-cells__res">满足当前筛选条件的学生人数为<span id="total-num" class="total-num">1</span>人</div>
+
     <!--动态加载符合条件的学生列表,base.js-->
-    <div id="students"></div>
+    <div class="mweui-cells" id="students">
+
+
+    </div>
 </div>
 </body>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
