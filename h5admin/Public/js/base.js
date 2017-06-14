@@ -9,10 +9,10 @@
         //查询所指导的学生信息列表
         queryStuInfo: function(){
             //默认查询条件
-            var gradePara = "所有年级";//年级,默认当前年级,研一
-            var inerPara = "全部实习状态";//状态,默认所有状态
-            var thesisPara = "全部开题状态";//状态,默认所有状态
-            var passPara = "全部答辩状态";//状态,默认所有状态
+            var gradePara = "入学年份";//年级,默认当前年级,研一
+            var inerPara = "实习状态";//状态,默认所有状态
+            var thesisPara = "开题状态";//状态,默认所有状态
+            var passPara = "答辩状态";//状态,默认所有状态
 
             //获取所有学生信息列表
             var allstuObj = Basicinfo.getAllStudentlist();
@@ -23,6 +23,7 @@
             Basicinfo.showStuList(stuObj);
 
             //筛选结果
+            //按年级
             $("#graSelect").change(function(){
                 gradePara = $("select[name=graSelect] option").not(function(){ return !this.selected }).text();
                 //获取符合条件的学生信息列表
@@ -30,7 +31,7 @@
                 //动态加载符合条件的学生列表
                 Basicinfo.showStuList(stuObj)
             });
-
+            //按实习状态
             $("#inerSelect").change(function(){
                 inerPara = $("select[name=inerSelect] option").not(function(){ return !this.selected }).text();
                 //获取符合条件的学生信息列表
@@ -38,6 +39,7 @@
                 //动态加载符合条件的学生列表
                 Basicinfo.showStuList(stuObj)
             });
+            //按开题状态
             $("#thesisSelect").change(function(){
                 thesisPara = $("select[name=thesisSelect] option").not(function(){ return !this.selected }).text();
                 //获取符合条件的学生信息列表
@@ -45,6 +47,7 @@
                 //动态加载符合条件的学生列表
                 Basicinfo.showStuList(stuObj)
             });
+            //按答辩状态
             $("#passSelect").change(function(){
                 passPara = $("select[name=passSelect] option").not(function(){ return !this.selected }).text();
                 //获取符合条件的学生信息列表
@@ -125,7 +128,7 @@
                 //筛选 -- 按年级
                 var copy = stuObj;
                 var select = [];
-                if(gradePara == "所有年级") {
+                if(gradePara == "入学年份") {
                     select = copy;
                 } else {
                     for (var i = 0; i < copy.length; i++) {//添加符合条件的元素 -- 年级
@@ -138,7 +141,7 @@
                 //筛选 -- 按实习状态
                 copy = select;
                 select = [];
-                if(inerPara == "全部实习状态") {
+                if(inerPara == "实习状态") {
                     select = copy;
                 } else {
                     for (var i = 0; i < copy.length; i++) {//添加符合条件的元素 -- 实习状态
@@ -151,7 +154,7 @@
                 //筛选 -- 按开题状态
                 copy = select;
                 select = [];
-                if(thesisPara == "全部开题状态") {
+                if(thesisPara == "开题状态") {
                     select = copy;
                 } else {
                     for (var i = 0; i < copy.length; i++) {//添加符合条件的元素 -- 实习状态
@@ -164,7 +167,7 @@
                 //筛选 -- 按答辩状态
                 copy = select;
                 select = [];
-                if(passPara == "全部答辩状态") {
+                if(passPara == "答辩状态") {
                     select = copy;
                 } else {
                     for (var i = 0; i < copy.length; i++) {//添加符合条件的元素 -- 实习状态
@@ -203,11 +206,11 @@
             var dom = '';
             // if(stuObj[i].status == "已开题"){
             //     stuObj[i].status = "";
-            // }
+
             if (stuObj) {
                 for (var i = 0; i < stuObj.length; i++) {
 
-                    dom += "<div class=\"weui-cells  weui-media-box weui-media-box_text\">" +
+                    dom += "<div class=\"weui-media-box weui-media-box_text\">" +
                         "<a class=\"weui-cell_access\" href=\"stuinfo?stuId=" + stuObj[i].stuid + "&stuInerSta=" + stuObj[i].inerStatus + "&stuThesisSta=" + stuObj[i].thesisStatus + "&stuPassSta=" + stuObj[i].passStatus + "\">" +
                         "<div id=\"stulist\" class=\"stulist weui-cell_access\">" +
                         "<p class=\"weui-media-box__desc\"><span id=\"stu-grade\">" + stuObj[i].grade + "</span>级&nbsp;&nbsp;&nbsp;<span id=\"stu-name\">" + stuObj[i].name + "</span>  " + "<span class='box-line aui-zd'>" + stuObj[i].inerStatus + "</span>" + "<span class='box-line aui-zd'>" + stuObj[i].thesisStatus + "</span>" + "<span class='box-line aui-zd'>" + stuObj[i].passStatus + "</span>" + "</p>" +
@@ -217,6 +220,7 @@
                         "</div>" +
                         "</a>" +
                         "</div>";
+
                 }
                 $("#students").html(dom);
             }
@@ -250,7 +254,7 @@
                 for (var i = 0; i < courseObj.length; i++) {
 
                     dom += "<div class=\"weui-media-box weui-media-box_text\">" +
-                                "<p class=\"mweui-media-box__desc\">互联网软件开发技术实践</p>" +
+                                "<p class=\"mweui-media-box__desc\"><span>0C706</span> <span>互联网软件开发技术实践</span></p>" +
                                 "<ul class=\"weui-media-box__info\">" +
                                     "<li class=\"weui-media-box__info__meta\">选课人数: 40人</li>"+
                                 "</ul>"+
@@ -283,11 +287,15 @@
             var dom = '';
             if(pracWorkObj) {
                 for (var i = 0; i < pracWorkObj.length; i++) {
-
                     dom += "<div class=\"weui-media-box weui-media-box_text\">" +
-                        "<p class=\"mweui-media-box__desc\"><span>16-17</span>学年&nbsp;<span>第二学期</span></p>" +
+                        "<p class=\"mweui-media-box__desc\"><span>综合实践:</span> <span>1班</span></p>" +
                         "<ul class=\"weui-media-box__info\">" +
-                        "<li class=\"weui-media-box__info__meta\">指导综合实践工作量<span>10</span>人</li>"+
+                        "<li class=\"weui-media-box__info__meta\">人数: <span>5</span>人</li>"+
+                        "<li class=\"weui-media-box__info__meta\">工作量所占百分比:<span>100</span>%</li>"+
+                        "</ul>"+
+                        "<ul class=\"weui-media-box__info\">" +
+                        "<li class=\"weui-media-box__info__meta\">所属校区: <span>北京</span></li>"+
+                        "<li class=\"weui-media-box__info__meta weui-media-box__info__meta_extra\"><span>16-17学年</span></li>"+
                         "</ul>"+
                         "</div>";
                 }
@@ -320,13 +328,13 @@
                 for (var i = 0; i < paperworkObj.length; i++) {
 
                     dom += "<div class=\"weui-media-box weui-media-box_text\">" +
-                        "<p class=\"mweui-media-box__desc\"><span>2016级</span>&nbsp;&nbsp;<span>张三</span></p>" +
+                        "<p class=\"mweui-media-box__desc\"><span>2017年6月论文答辩</span></p>" +
                         "<ul class=\"weui-media-box__info\">" +
-                        "<li class=\"weui-media-box__info__meta\">方向:<span>计算机软件开发</span></li>"+
+                        "<li class=\"weui-media-box__info__meta\">工作量:<span>13.2</span></li>"+
                         "</ul>"+
                         "<ul class=\"weui-media-box__info\">"+
-                    "<li class=\"weui-media-box__info__meta\">通过答辩</li>"+
-                    "<li class=\"weui-media-box__info__meta weui-media-box__info__meta_extra\">答辩时间 <span>2017年7月</span></li>"+
+                    "<li class=\"weui-media-box__info__meta\">通过答辩<span>16</span>人</li>"+
+                    "<li class=\"weui-media-box__info__meta weui-media-box__info__meta_extra\"><span>北京</span></li>"+
                     "</ul>"+
                     "</div>";
                 }

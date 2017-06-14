@@ -1461,8 +1461,9 @@ a.weui-media-box:active {
   word-break: break-all;
 }
 .weui-media-box__desc {
+  /*color: #6d6b6c;*/
   color: #353535;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
