@@ -25,6 +25,29 @@
     /*position: relative;*/
 /*}*/
 
+/*工作量统计 卡片标题*/
+.mweui-cells__title {
+    margin-top: .77em;
+    margin-bottom: .3em;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #353535;
+    font-size: 15px;
+}
+.mweui-cells__title + .weui-cells {
+    margin-top: 0;
+}
+.mweui-cells__tips {
+    margin-top: .3em;
+    color: #999999;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.course-item{
+    padding-left: 40px;
+}
 
 /*卡片*/
 .mweui-cells {
