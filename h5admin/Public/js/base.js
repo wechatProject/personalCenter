@@ -227,44 +227,123 @@
         },
 
 
-
-
         /**
          * 授课课时工作量
+         *
+         * 学年id  学年
+         *   1   2015-2016
+         *   2   2014-2015
+         *   3   2016-2017
          */
         queryTeachWork: function(){
-            courseObj = "123";//测试显示列表
-            //动态加载该教师所教授的课程列表
-            Basicinfo.showCourseList(courseObj);
+
+            //默认查询条件,学年,默认取id = 3 , 表示当前学年 ,格式:2016-2017
+            var yearPara = 3;
+
+            //获取课程列表
+            courselist_term1 = Basicinfo.getCourselist(yearPara,1);//第一学期
+            courselist_term2 = Basicinfo.getCourselist(yearPara,2);//第二学期
+            //动态加载课程列表
+             Basicinfo.showCourseList(courselist_term1,1);//第一学期
+             Basicinfo.showCourseList(courselist_term2,2);//第二学期
+
+            //按学年查询
+            $("#yearSelect").change(function(){
+                //获取筛选条件 -- 学年
+                yearPara = $("select[name=yearSelect] option").not(function(){ return !this.selected }).val();
+                //获取课程列表
+                courselist_term1 = Basicinfo.getCourselist(yearPara,1);//第一学期
+                courselist_term2 = Basicinfo.getCourselist(yearPara,2);//第二学期
+                //动态加载课程列表
+                Basicinfo.showCourseList(courselist_term1,1);//第一学期
+                Basicinfo.showCourseList(courselist_term2,2);//第二学期
+            });
+        },
+
+        /**
+         * 获取某学年某学期的授课信息列表
+         * @param year_name 学年(查询条件)
+         * @param term_name 学期
+         * @returns {string} 授课信息列表
+         */
+        getCourselist: function(year_name,term_name){
+            var courseObj = "没有课程信息";//课程列表
+            var urlstring =  apiConfig.getCourselist;
+            $.ajax({
+                type: 'POST',
+                async: false,
+                data: {year_name: year_name, term_name: term_name },
+                url : urlstring,
+                dataType: 'json',
+                success: function(data){
+                    var meta = data.meta;
+                    if(meta.code == '0'){
+                        courseObj = data.courselist;
+                        return courseObj;
+                    }
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown){
+                    //提示出错
+                    console.log("ajax error");
+                    console.log(XMLHttpRequest);
+                    console.log(textStatus);
+                    console.log(errorThrown);
+                }
+            });
+            return courseObj;
         },
         /**
-         * 动态加载课程列表
+         * 动态加载课程列表(该学年第一、二学期的所有课程)
          * @param 课程列表对象
          * courseObj 课程列表对象
-         * courseObj[i].name     课程名
-         * courseObj[i].stuNum   选课人数
-         * courseObj[i].hours    课程学时
-         * courseObj[i].year     学年(查询条件)
-         * courseObj[i].term     学期(查询条件)
+         * courseObj[i].name        课程名
+         * courseObj[i].num         课程编号,eg. 0C706
+         * courseObj[i].stu_count   选课人数
+         * courseObj[i].hour        课程学时,eg. 48
+         * courseObj[i].location    地区,eg. 北京
+         * courseObj[i].year_name   学年(查询条件),eg. 2016-2017
+         * courseObj[i].term_name   学期(查询条件),eg. 1 或 2
          */
-        showCourseList: function(courseObj){
+        showCourseList: function(courseObj,term_name){
             //动态加载页面 -- 显示符合条件的课程列表
             var dom = '';
-            if(courseObj) {
+            if(term_name == 1){
+                $term_title = "第一学期";
+            }else {
+                $term_title = "第二学期";
+            }
+            if(courseObj.length != 0) {//有课程信息
+
+                dom += "<div class=\"mweui-cells__title\"><b>"+$term_title+"</b></div>" +
+                         " <div class=\"weui-cells\">" ;
+
                 for (var i = 0; i < courseObj.length; i++) {
 
-                    dom += "<div class=\"weui-media-box weui-media-box_text\">" +
-                                "<p class=\"mweui-media-box__desc\"><span>0C706</span> <span>互联网软件开发技术实践</span></p>" +
-                                "<ul class=\"weui-media-box__info\">" +
-                                    "<li class=\"weui-media-box__info__meta\">选课人数: 40人</li>"+
-                                "</ul>"+
-                                "<ul class=\"weui-media-box__info\">" +
-                                    "<li class=\"weui-media-box__info__meta\"><span>48课时</span></li>"+
-                                    "<li class=\"weui-media-box__info__meta weui-media-box__info__meta_extra\"><span>16-17学年</span> <span>第二学期</span></li>"+
-                                "</ul>"+
-                             "</div>";
+                    dom += "<div class=\"weui-cell\">" +
+                                "<div class=\"weui-cell__bd\">"+
+                                     "<p><span>"+courseObj[i].name+"</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\">"+courseObj[i].hour+"课时</span>"+
+                                "</div>" +
+                                "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">"+courseObj[i].stu_count+"人</div>"+
+                            "</div>";
                 }
-                $("#coures").html(dom);
+                dom += "</div>";
+
+            }else{//无课程信息
+                dom += "<div class=\"mweui-cells__title\"><b>"+$term_title+"</b></div>" +
+                    " <div class=\"weui-cells\">" +
+                    "<div class=\"weui-cell\">" +
+                    "<div class=\"weui-cell__bd\">"+
+                    "<p><span>无课程信息</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"></span>"+
+                    "</div>" +
+                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"></div>"+
+                    "</div>"+
+                    "</div>";
+
+            }
+            if(term_name == 1){
+                $("#coures-term1").html(dom);
+            }else {
+                $("#coures-term2").html(dom);
             }
         },
 
