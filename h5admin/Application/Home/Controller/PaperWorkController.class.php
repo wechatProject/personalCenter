@@ -11,6 +11,15 @@ use Think\Controller;
  */
 class PaperWorkController extends Controller {
 
+    public function index(){
+
+        session('[start]');
+        $_SESSION['userid'] = '1601210606';  //用于在网页进行测试
+
+        $this->display();
+//        $this->display('index-v2');
+    }
+
 }
 
 ?>

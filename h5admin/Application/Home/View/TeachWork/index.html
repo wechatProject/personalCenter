@@ -24,12 +24,12 @@
         <div class="mweui-flex">
             <div class="mweui-flex__item">
                 <div class="placeholder">
-                    <!--入学年份选择,默认为当前学年(研一的新生)-->
+                    <!--学年,默认取当前学年,如2016-2017-->
                     <b>
-                    <select id="graSelect" class="mweui-select graSelect" name="graSelect">
-                        <option value="1">2016-2017</option>
+                    <select id="yearSelect" class="mweui-select yearSelect" name="yearSelect">
+                        <option value="3">2016-2017</option>
                         <option value="2">2015-2016</option>
-                        <option value="3">2014-2015</option>
+                        <option value="1">2014-2015</option>
                     </select>
                     <span>学年课程列表</span>
                     </b>
@@ -42,48 +42,26 @@
     <!--条件查询结果-->
     <!--<div class="weui-cells__title"><span>16-17学年度</span><span>第二学期</span>授课总课时为<span class="total-num">48</span></div>-->
 
-    <!--课程列表-->
-    <!--春季课程列表-->
-    <div class="mweui-cells__title"><b><span>2017年</span>春季学期</b></div>
-    <div class="weui-cells">
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p><span>互联网软件开发技术实践</span><span class="course-item" style="float: right;padding-right: 30px">32课时</span></p>
-            </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">36人</div>
-        </div>
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p><span>海量数据处理</span><span class="course-item" style="float: right;padding-right: 30px">32课时</span></p>
-            </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">36人</div>
-        </div>
-    </div>
 
-    <!--秋季课程列表-->
-    <div class="mweui-cells__title"><b><span>2016年</span>秋季学期</b></div>
-    <div class="weui-cells">
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p><span>互联网软件开发技术实践</span><span class="course-item" style="float: right;padding-right: 30px">32课时</span></p>
-            </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">36人</div>
-        </div>
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p><span>海量数据处理</span><span class="course-item" style="float: right;padding-right: 30px">32课时</span></p>
-            </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">36人</div>
-        </div>
-    </div>
+    <!--课程列表(动态加载)-->
+    <!--第一学期(秋季)课程列表-->
+    <div id="coures-term1">
 
     </div>
+    <div id="coures-term2">
+        <!--第二学期(春季)课程列表-->
+    </div>
+
+
+
+
 </div>
 </div>
 </body>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/zepto.alert.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/config.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/base.js"></script>
 <script>
+    Basicinfo.queryTeachWork();//条件查询授课课时列表
 </script>
 </html>
