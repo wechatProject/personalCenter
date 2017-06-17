@@ -3,6 +3,30 @@
     //学生信息、授课信息、综合实践信息、论文指导信息
     var Basicinfo = {
 
+        // getRuXueOptions: function(){
+        //
+        //     var urlstring = apiConfig.getInfoOptions;
+        //     $.ajax({
+        //         async: false,
+        //         type: 'GET',
+        //         url: urlstring,
+        //         dataType: 'json',
+        //         success: function (data) {
+        //
+        //             if (data.errcode == "0") {
+        //                 var str = "<option value=\"\" selected=\"selected\">入学年份</option>";
+        //                 for (var j = 0; j < data.data.length; j++) {
+        //                     str += "<option value=\"" + data.data[j].id + "\">" + data.data[j].order + "</option>";
+        //                 }
+        //                 $("#graSelect").html(str);
+        //             }
+        //         },
+        //         error: function () {
+        //             console.log('获取选项信息失败');
+        //         }
+        //     });
+        // },
+
         /**
          * 学生信息
          */

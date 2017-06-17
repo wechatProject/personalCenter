@@ -22,17 +22,10 @@
                 <div class="placeholder">
                     <!--入学年份选择,默认为当前学年(研一的新生)-->
                     <select id="graSelect" class="mweui-select graSelect" name="graSelect">
-                        <option value="0">入学年份</option>
-                        <option value="1">2016</option>
-                        <option value="2">2015</option>
-                        <option value="3">2014</option>
-                        <option value="4">2013</option>
-                        <option value="5">2012</option>
-                        <option value="6">2011</option>
-                        <option value="7">2010</option>
-                        <option value="8">2009</option>
-                        <option value="9">2008</option>
-                        <option value="10">2007</option>
+                        <option value="0" selected="selected">入学年份</option>
+                        {%foreach from=$year item=it%}
+                        <option value="{%$it.id%}">{%$it.order%}</option>
+                        {%/foreach%}
                     </select>
                 </div>
             </div>
@@ -84,6 +77,7 @@
 <script type="text/javascript" src="__PUBLIC__/js/config.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/base.js"></script>
 <script type="text/javascript">
+    //Basicinfo.getRuXueOptions();
     Basicinfo.queryStuInfo();//条件查询该导师指导的学生列表
 </script>
 </html>

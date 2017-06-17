@@ -20,6 +20,9 @@ class StudentInfoController extends Controller  {
         session('[start]');
         $_SESSION['userid'] = '1601210606';  //用于在网页进行测试
 
+        $yearArr = getYearList();
+        $this->assign('year',$yearArr);
+
         $this->display();
 
     }
