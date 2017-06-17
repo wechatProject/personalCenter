@@ -379,7 +379,7 @@
                                 "<div class=\"weui-cell__bd\">"+
                                      "<p><span>"+courseObj[i].name+"</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\">"+courseObj[i].hour+"课时</span>"+
                                 "</div>" +
-                                "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">"+courseObj[i].stu_count+"人</div>"+
+                                "<div class=\"weui-cell__ft\" style=\"color: #5facbe;\">"+courseObj[i].stu_count+"人</div>"+
                             "</div>";
                 }
                 dom += "</div>";
@@ -391,7 +391,7 @@
                     "<div class=\"weui-cell__bd\">"+
                     "<p><span>无课程信息</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"></span>"+
                     "</div>" +
-                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"></div>"+
+                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;\"></div>"+
                     "</div>"+
                     "</div>";
 
@@ -479,13 +479,13 @@
                     "<div class=\"weui-cell__bd\">" +
                     "<p><span>导师 : " + pracWorkObj[0].tercher_name + "</span></p>" +
                     "</div>" +
-                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">" + pracWorkObj[0].percent + "%</div>" +
+                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;\">" + pracWorkObj[0].percent + "%</div>" +
                     "</div>" +
                     "<div class=\"weui-cell\">" +
                     "<div class=\"weui-cell__bd\">" +
                     "<p><span>协助导师 : " + pracWorkObj[0].vice_teacher_name + "</span></p>" +
                     "</div>" +
-                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">" + pracWorkObj[0].vicepercent + "%</div>" +
+                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;\">" + pracWorkObj[0].vicepercent + "%</div>" +
                     "</div>" +
                     "</div>";
 
@@ -496,7 +496,7 @@
                                 "<div class=\"weui-cell__bd\">" +
                                     "<p>综合实践<span>" + pracWorkObj[i].class + "</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"><span>" + pracWorkObj[i].stu_count + "</span>人</span></p>" +
                                 "</div>" +
-                                "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">"+ pracWorkObj[i].location +"</div>" +
+                                "<div class=\"weui-cell__ft\" style=\"color: #5facbe;\">"+ pracWorkObj[i].location +"</div>" +
                             "</div>";
 
                 }
@@ -508,14 +508,14 @@
                     "<div class=\"weui-cell__bd\">" +
                     "<p style='text-align: center'><span>无</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"></p>" +
                     "</div>" +
-                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"></div>" +
+                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;\"></div>" +
                     "</div>";
 
                 dom1 += "<div class=\"weui-cell\">" +
                     "<div class=\"weui-cell__bd\">" +
                     "<p style='text-align: center'><span>无</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"></p>" +
                     "</div>" +
-                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"></div>" +
+                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;\"></div>" +
                     "</div>";
 
             }
@@ -601,21 +601,21 @@
                                     "   <div class=\"weui-cell__bd\">" +
                                             "<p>通过答辩人数</p>" +
                                         "</div>" +
-                                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">"+paperworkObj[i].stu_count+"</div>" +
+                                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;\">"+paperworkObj[i].stu_count+"</div>" +
                                     "</div>" +
 
                                     "<div class=\"weui-cell\">" +
                                         "<div class=\"weui-cell__bd\">" +
                                             "<p>工作量</p>" +
                                         "</div>" +
-                                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">"+paperworkObj[i].sum+"</div>" +
+                                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;\">"+paperworkObj[i].sum+"</div>" +
                                     "</div>" +
 
                                     "<div class=\"weui-cell\">" +
                                         "<div class=\"weui-cell__bd\">" +
                                             "<p>所属校区</p>" +
                                         "</div>" +
-                                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">"+paperworkObj[i].location+"</div>" +
+                                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;\">"+paperworkObj[i].location+"</div>" +
                                     "</div>" +
                                 "</div>" +
                             "</div>";
@@ -628,7 +628,7 @@
                     "<div class=\"weui-cell__bd\">" +
                     "<p style='text-align: center'>无<span class=\"course-item\" style=\"float: right;padding-right: 30px\"></span></p>" +
                     "</div>" +
-                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"></div>" +
+                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;\"></div>" +
                     "</div>" +
                     "</div>";
 
