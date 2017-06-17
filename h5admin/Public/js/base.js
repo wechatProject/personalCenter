@@ -407,37 +407,12 @@
             var dom1 = '';
 
             //工作量比例
-<<<<<<< HEAD
+
             dom += "<div class=\"mweui-cells__title\"><b>" + "工作量比例" + "</b></div>" +
                 "<div class=\"weui-cells\">"
             //综合实践工作量
             dom1 += "<div class=\"mweui-cells__title\"><b>" + "综合实践工作量" + "</b></div>" +
                 " <div class=\"weui-cells\">";
-=======
-            dom += "<div class=\"mweui-cells__title\"><b>工作量比例</b></div>" +
-                        "<div class=\"weui-cells\">" +
-                            "<div class=\"weui-cell\">" +
-                                "<div class=\"weui-cell__bd\">"+
-                                    "<p><span>导师:吴中海</span></p>"+
-                                "</div>"+
-                                "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">0%</div>" +
-                            "</div>"+
-                            "<div class=\"weui-cell\">"+
-                                "<div class=\"weui-cell__bd\">"+
-                                    "<p><span>协助导师:张齐勋</span></p>"+
-                                "</div>"+
-                            "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">100%</div>"+
-                        "</div>"+
-                    "</div>";
-
-            $("#pracWork_desc").html(dom);
-
-
-            //综合实践工作量
-            dom1 += "<div class=\"mweui-cells__title\"><b>"+"综合实践工作量"+"</b></div>" +
-                " <div class=\"weui-cells\">" ;
-
->>>>>>> fbe4fcd1d1a055fc22ec2bab04e13688374def53
 
             if(pracWorkObj.length != 0) {//有信息
 
@@ -491,14 +466,60 @@
         },
 
 
+
         /**
          * 指导论文工作量
          */
         queryPaperWork: function(){
-            paperworkObj = "12";//测试显示列表
-            //动态加载通过答辩的学生列表
+
+            var yearPara = $('#opt_0').val();
+
+            //获取答辩对象
+            var paperworkObj = Basicinfo.getPaperWorkList(yearPara);
+            //动态加载答辩列表
             Basicinfo.showPaperWorkList(paperworkObj);
+
+            //按学年查询
+            $("#graSelect").change(function(){
+                //获取筛选条件 -- 学年
+                yearPara = $("select[name=graSelect] option").not(function(){ return !this.selected }).val();
+                //获取答辩列表
+                paperworkObj = Basicinfo.getPaperWorkList(yearPara);
+                //动态加载通过答辩的学生列表
+                Basicinfo.showPaperWorkList(paperworkObj);
+            });
+
         },
+
+        /**
+         * 根据学年的id去获取当前学年的论文答辩工作量
+         * @param yearPara
+         */
+
+        getPaperWorkList: function(yearPara) {
+            var paperObj = "";
+            var urlstring = apiConfig.getPaperInfo;
+            $.ajax({
+                type: 'POST',
+                async:false,
+                data:{yearPara:yearPara},
+                url:urlstring,
+                dataType: 'json',
+                success:function(data) {
+                    var meta = data.meta;
+                    if(meta.code == '0' && data.paperInfo.length!=0){
+                        paperObj = data.paperInfo;
+                        return paperObj;
+                    }
+                },
+                error:function() {
+                    console.log("查询论文答辩信息失败");
+                }
+            });
+            return paperObj;
+        },
+
+
         /**
          * 动态加载指导论文工作量列表
          * @param paperworkObj 导论文工作量列表对象
@@ -516,13 +537,13 @@
                 for (var i = 0; i < paperworkObj.length; i++) {
 
                     //工作量列表
-                    dom += "<div class=\"mweui-cells__title\"><b><span id=\"time_name2\" class=\"\"><span class='time_year'>2017年7月论文答辩</span></span></b></div>" +
+                    dom += "<div class=\"mweui-cells__title\"><b><span id=\"time_name2\" class=\"\"><span class='time_year'>" + paperworkObj[i].time_name + "</span></span></b></div>" +
                         "<div class=\"weui-cells\">" +
                         "<div class=\"weui-cell\">" +
                         "<div class=\"weui-cell__bd\">" +
-                        "<p>通过答辩人数: <span>16</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\">工作量: <span>13.2</span></span></p>" +
+                        "<p>通过答辩人数: <span>" + paperworkObj[i].stu_count + "</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\">工作量: <span>" + paperworkObj[i].sum + "</span></span></p>" +
                         "</div>" +
-                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"><span>北京</span></div>" +
+                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"><span>" + paperworkObj[i].location + "</span></div>" +
                         "</div>" +
                         "</div>";
 
@@ -540,11 +561,8 @@
                     "</div>";
 
             }
-
             $("#paperwork").html(dom);
-
-
-        },
+        }
     };
 
     var rBasicinfo = function(){

@@ -20,7 +20,6 @@ class TeacherInfoController extends CommonController{
         //将json格式转换为数组
         $arr = json_decode($json,true);
 
-		trace($json,'shujubao=');
 
         $userid = $_SESSION['userid']?$_SESSION['userid']:"无";
         $name = $arr['data']['name'];

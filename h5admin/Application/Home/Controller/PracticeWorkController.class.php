@@ -1,7 +1,7 @@
 <?php
 
 namespace Home\Controller;
-use Think\Controller;
+//use Think\Controller;
 
 /**
  * 工作量统计
@@ -9,19 +9,15 @@ use Think\Controller;
  * 综合实践工作量 -- 没完成(没有给接口)
  *
  */
-class PracticeWorkController extends Controller {
+class PracticeWorkController extends CommonController {
 
     public function index(){
-
-        session('[start]');
-        $_SESSION['userid'] = '1601210606';  //用于在网页进行测试
 
         $yearArr = getYearList();
         $this->assign('year',$yearArr);
 
 
         $this->display();
-
 
     }
 
