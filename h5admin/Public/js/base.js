@@ -3,30 +3,6 @@
     //学生信息、授课信息、综合实践信息、论文指导信息
     var Basicinfo = {
 
-        // getRuXueOptions: function(){
-        //
-        //     var urlstring = apiConfig.getInfoOptions;
-        //     $.ajax({
-        //         async: false,
-        //         type: 'GET',
-        //         url: urlstring,
-        //         dataType: 'json',
-        //         success: function (data) {
-        //
-        //             if (data.errcode == "0") {
-        //                 var str = "<option value=\"\" selected=\"selected\">入学年份</option>";
-        //                 for (var j = 0; j < data.data.length; j++) {
-        //                     str += "<option value=\"" + data.data[j].id + "\">" + data.data[j].order + "</option>";
-        //                 }
-        //                 $("#graSelect").html(str);
-        //             }
-        //         },
-        //         error: function () {
-        //             console.log('获取选项信息失败');
-        //         }
-        //     });
-        // },
-
         /**
          * 学生信息
          */
@@ -371,14 +347,57 @@
             }
         },
 
+
         /**
          * 综合实践工作量
          */
         queryPracticeWork: function(){
-            pracWorkObj = "123";//测试显示列表
+
+            var yearName = $('#opt_0').text();
+
+            //获取综合实践工作量对象
+            var pracWorkObj = Basicinfo.getPracticeWorkList(yearName);
             //动态加载综合实践工作量列表
             Basicinfo.showPracinfoList(pracWorkObj);
+
+            //按学年查询
+            $("#graSelect").change(function(){
+                //获取筛选条件 -- 学年
+                yearName = $("select[name=graSelect] option").not(function(){ return !this.selected }).text();
+                //获取课程列表
+                pracWorkObj = Basicinfo.getPracticeWorkList(yearName);
+                //动态加载综合实践工作量列表
+                Basicinfo.showPracinfoList(pracWorkObj);
+            });
         },
+
+        /**
+         * 根据学年查当前老师的该学年综合实践信息
+         * @param year_name
+         */
+        getPracticeWorkList: function(year_name){
+            var practiceObj = "";
+            var urlstring = apiConfig.getPracticeInfo;
+            $.ajax({
+                type: 'POST',
+                async:false,
+                data:{year_name:year_name},
+                url:urlstring,
+                dataType: 'json',
+                success:function(data) {
+                    var meta = data.meta;
+                    if(meta.code == '0' && data.practiceInfo.length!=0){
+                        practiceObj = data.practiceInfo;
+                        return practiceObj;
+                    }
+                },
+                error:function() {
+                    console.log("查询综合实践信息失败");
+                }
+            });
+            return practiceObj;
+        },
+
         /**
          * 动态加载综合实践工作量列表
          * @param pracWorkObj 综合实践工作量对象
@@ -386,51 +405,56 @@
          * pracInfoObj[i].year     学年(查询条件)
          * pracInfoObj[i].term     学期(查询条件)
          */
-        showPracinfoList: function(pracWorkObj){
+        showPracinfoList: function(pracWorkObj) {
             var dom = '';
             var dom1 = '';
 
             //工作量比例
-            dom += "<div class=\"mweui-cells__title\"><b>工作量比例</b></div>" +
-                        "<div class=\"weui-cells\">" +
-                            "<div class=\"weui-cell\">" +
-                                "<div class=\"weui-cell__bd\">"+
-                                    "<p><span>导师:吴中海</span></p>"+
-                                "</div>"+
-                                "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">0%</div>" +
-                            "</div>"+
-                            "<div class=\"weui-cell\">"+
-                                "<div class=\"weui-cell__bd\">"+
-                                    "<p><span>协助导师:张齐勋</span></p>"+
-                                "</div>"+
-                            "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">100%</div>"+
-                        "</div>"+
-                    "</div>";
-
-            $("#pracWork_desc").html(dom);
-
-
-            //综合实践工作量s
-            dom1 += "<div class=\"mweui-cells__title\"><b>"+"综合实践工作量"+"</b></div>" +
-                " <div class=\"weui-cells\">" ;
-
+            dom += "<div class=\"mweui-cells__title\"><b>" + "工作量比例" + "</b></div>" +
+                "<div class=\"weui-cells\">"
+            //综合实践工作量
+            dom1 += "<div class=\"mweui-cells__title\"><b>" + "综合实践工作量" + "</b></div>" +
+                " <div class=\"weui-cells\">";
 
             if(pracWorkObj.length != 0) {//有信息
+
+                //工作量比例
+                dom += "<div class=\"weui-cell\">" +
+                    "<div class=\"weui-cell__bd\">" +
+                    "<p><span>导师 : " + pracWorkObj[0].tercher_name + "</span></p>" +
+                    "</div>" +
+                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">" + pracWorkObj[0].percent + "%</div>" +
+                    "</div>" +
+                    "<div class=\"weui-cell\">" +
+                    "<div class=\"weui-cell__bd\">" +
+                    "<p><span>协助导师 : " + pracWorkObj[0].vice_teacher_name + "</span></p>" +
+                    "</div>" +
+                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">" + pracWorkObj[0].vicepercent + "%</div>" +
+                    "</div>" +
+                    "</div>";
 
                 for (var i = 0; i < pracWorkObj.length; i++) {
 
                     //工作量列表
                     dom1 += "<div class=\"weui-cell\">" +
                                 "<div class=\"weui-cell__bd\">" +
-                                    "<p>综合实践<span>1班</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"><span>5</span>人</span></p>" +
+                                    "<p>综合实践<span>" + pracWorkObj[i].class + "</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"><span>" + pracWorkObj[i].stu_count + "</span>人</span></p>" +
                                 "</div>" +
-                                "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">北京</div>" +
+                                "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">"+ pracWorkObj[i].location +"</div>" +
                             "</div>";
 
                 }
                 dom1 += "</div>";
 
             }else{//无信息
+
+                dom += "<div class=\"weui-cell\">" +
+                    "<div class=\"weui-cell__bd\">" +
+                    "<p><span>无</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"></p>" +
+                    "</div>" +
+                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"></div>" +
+                    "</div>";
+
                 dom1 += "<div class=\"weui-cell\">" +
                     "<div class=\"weui-cell__bd\">" +
                     "<p><span>无</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"></p>" +
@@ -439,6 +463,7 @@
                     "</div>";
 
             }
+            $("#pracWork_desc").html(dom);
             $("#pracWorkList").html(dom1);
         },
 

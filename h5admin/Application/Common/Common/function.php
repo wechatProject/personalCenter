@@ -1,12 +1,16 @@
 <?php
 
 //将取到的导师下学生信息(二维数组)根据$row(学号)进行排序
-function array_sort($array,$row){
+function array_sort($array,$row,$mark){
     $array_temp = array();
     foreach($array as $v){
         $array_temp[$v[$row]] = $v;
     }
-    krsort($array_temp);
+    if($mark == 'ascend'){
+        ksort($array_temp);
+    }else if($mark == 'descend'){
+        krsort($array_temp);
+    }
     $new_array = array();
 
     $num = 0;
@@ -28,7 +32,7 @@ function getYearList(){
     $arr = json_decode($json,true);
 
     if($arr['errcode'] == 0){
-        $sortArr = array_sort($arr['data'],'order');
+        $sortArr = array_sort($arr['data'],'order','descend');
         return $sortArr;
     }
     return $arr;

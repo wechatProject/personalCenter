@@ -100,7 +100,7 @@ class StudentInfoController extends Controller  {
         }
 
         //需要对$stuArr数组排序
-        $sortArr = array_sort($stuArr, 'stuid');
+        $sortArr = array_sort($stuArr, 'stuid','descend');
 
 
         //错误代码:0 - 无错误

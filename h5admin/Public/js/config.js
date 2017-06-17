@@ -8,11 +8,9 @@ var ROOT_URL = "http://www.neferpitou.cn/personalCenter/h5admin/index.php/Home/"
 var apiConfig = {
     //获取该导师指导下,所有学生信息列表
     getAllStduentlist : ROOT_URL + "StudentInfo/getAllStduentlist",
-<<<<<<< HEAD
-    //getInfoOptions : ROOT_URL + "Util/getInfoOptions",
-
-=======
+    //获取综合实践信息
+    getPracticeInfo : ROOT_URL + "PracticeWork/getPracticeInfo",
     //获取授课信息列表
-    getCourselist : ROOT_URL + "TeachWork/getCourselist",
->>>>>>> beda364639356bb0baf5b95b83165b9ce7441578
+    getCourselist : ROOT_URL + "TeachWork/getCourselist"
+
 };

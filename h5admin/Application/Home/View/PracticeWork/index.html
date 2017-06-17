@@ -26,9 +26,10 @@
                     <!--入学年份选择,默认为当前学年(研一的新生)-->
                     <b>
                         <select id="graSelect" class="mweui-select graSelect" name="graSelect">
-                            <option value="1">2016-2017</option>
-                            <option value="2">2015-2016</option>
-                            <option value="3">2014-2015</option>
+                            {%foreach from=$year item=it key=key %}
+
+                            <option id="opt_{%$key%}"  value="{%$it.id%}">{%$it.name%}</option>
+                            {%/foreach%}
                         </select>
                         <span>学年综合实践工作量</span>
                     </b>
@@ -48,8 +49,6 @@
     <!--综合实践工作量列表-->
     <div id="pracWorkList"></div>
 
-</div>
-</div>
 </div>
 </body>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
