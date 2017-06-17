@@ -27,7 +27,7 @@
                 <p>{%$name%}</p>
                 <p>{%$gender%}</p>
             </div>
-            <div class="status weui-cell__ft" style="color: red"><span class="box-line-large aui-zd-large">{%$stuInerSta%}</span><span class="box-line-large aui-zd-large">{%$stuThesisSta%}</span><span class="box-line-large aui-zd-large">{%$stuPassSta%}</span></div>
+            <!--<div class="status weui-cell__ft" style="color: red"><span class="box-line-large aui-zd-large">{%$stuInerSta%}</span><span class="box-line-large aui-zd-large">{%$stuThesisSta%}</span><span class="box-line-large aui-zd-large">{%$stuPassSta%}</span></div>-->
         </div>
         </div>
 
@@ -101,7 +101,7 @@
                 <p>实习信息</p>
             </div>
             <!--实习状态:未实习、实习中、实习结束-->
-            <div class="inerStatus weui-cell__ft">{%$stuInerSta%}</div>
+            <div class="inerStatus weui-cell__ft" style="color: red">{%$stuInerSta%}</div>
         </a>
         <!--开题信息-->
         <a class="weui-cell weui-cell_access" href="__URL__/thesisinfo?stuId={%$stuId%}">
@@ -109,7 +109,7 @@
                 <p>开题信息</p>
             </div>
             <!--开题状态:未开题、已开题-->
-            <div class="thesisStatus weui-cell__ft">{%$stuThesisSta%}</div>
+            <div class="thesisStatus weui-cell__ft" style="color: red">{%$stuThesisSta%}</div>
         </a>
         <!--答辩信息-->
         <a class="weui-cell weui-cell_access" href="__URL__/defense?stuId={%$stuId%}">
@@ -117,7 +117,7 @@
                 <p>答辩信息</p>
             </div>
             <!--答辩状态:未通过答辩、已通过答辩-->
-            <div class="passtatus weui-cell__ft">{%$stuPassSta%}</div>
+            <div class="passtatus weui-cell__ft" style="color: red">{%$stuPassSta%}</div>
         </a>
         <!--就业信息-->
         <a class="weui-cell weui-cell_access" href="__URL__/jobinfo?stuId={%$stuId%}">
