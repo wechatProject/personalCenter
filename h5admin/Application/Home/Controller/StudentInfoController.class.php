@@ -7,11 +7,11 @@ use Think\Log;
 /**
  * 学生信息
  * 包括:
- * 指导学列表index     -- 已经完成
- * 学生详细信息stuinfo -- 已经完成
- * 实习信息inerinfo    --没完成(没有给接口)
- * 开题信息thesisinfo  --没完成(没有给接口)
- * 就业信息jobinfo     --没完成(没有给接口)
+ * 指导学列表index
+ * 学生详细信息stuinfo
+ * 实习信息inerinfo
+ * 开题信息thesisinfo
+ * 就业信息jobinfo
  */
 class StudentInfoController extends Controller  {
 

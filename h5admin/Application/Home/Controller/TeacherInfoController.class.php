@@ -4,7 +4,7 @@ namespace Home\Controller;
 
 
 /**
- * 教师个人信息 -- 已经完成
+ * 教师个人信息
  */
 class TeacherInfoController extends CommonController{
     public function index(){

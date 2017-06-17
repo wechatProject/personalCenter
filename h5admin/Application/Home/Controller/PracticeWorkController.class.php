@@ -6,7 +6,7 @@ namespace Home\Controller;
 /**
  * 工作量统计
  *
- * 综合实践工作量 -- 没完成(没有给接口)
+ * 综合实践工作量
  *
  */
 class PracticeWorkController extends CommonController {

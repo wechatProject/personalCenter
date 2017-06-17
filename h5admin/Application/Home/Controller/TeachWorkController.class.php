@@ -7,7 +7,7 @@ use Think\Controller;
 /**
  * 工作量统计
  *
- * 授课课时工作量  -- 没完成(没有给接口)
+ * 授课课时工作量
  */
 class TeachWorkController extends Controller {
     public function index(){
