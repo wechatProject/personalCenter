@@ -32,7 +32,7 @@
     padding-left: 15px;
     padding-right: 15px;
     color: #353535;
-    font-size: 15px;
+    font-size: 14px;
 }
 .mweui-cells__title + .weui-cells {
     margin-top: 0;
@@ -104,8 +104,45 @@
     height: 15px;
 }
 
-/*顶部查询条件*/
-.mweui-select {
+/*顶部查询条件选中后的状态*/
+/*学年-学生信息页面*/
+.graSelect1 {
+    -webkit-appearance: none;
+    border: 0.5px;
+    /*outline: 0;*/
+    /*background-color: #ffffff;*/
+    background-color: transparent;
+    /*width: 100%;*/
+    /*width: 90px;*/
+    font-size: inherit;
+    color: #f37474;
+    /*height: 50px;*/
+    /*line-height: 40px;*/
+    position: relative;
+    z-index: 1;
+    /*padding-left: 50px;!*查询条件文字*!*/
+    /*cursor: pointer;*/
+}
+/*学年*/
+.graSelect {
+    -webkit-appearance: none;
+    border: 0.5px;
+    /*outline: 0;*/
+    /*background-color: #ffffff;*/
+    background-color: transparent;
+    /*width: 100%;*/
+    width: 90px;
+    font-size: inherit;
+    color: #f37474;
+    /*height: 50px;*/
+    /*line-height: 40px;*/
+    position: relative;
+    z-index: 1;
+    /*padding-left: 50px;!*查询条件文字*!*/
+    /*cursor: pointer;*/
+}
+/*实习状态*/
+.inerSelect {
      -webkit-appearance: none;
      border: 0.5px;
      /*outline: 0;*/
@@ -113,6 +150,7 @@
      background-color: transparent;
      /*width: 100%;*/
      font-size: inherit;
+     color: #f37474;
      /*height: 50px;*/
      /*line-height: 40px;*/
      position: relative;
@@ -120,21 +158,58 @@
      /*padding-left: 50px;!*查询条件文字*!*/
      /*cursor: pointer;*/
  }
-/*.mweui-select {*/
-    /*-webkit-appearance: none;*/
-    /*border: 0.5px;*/
+/*开题状态*/
+.thesisSelect {
+    -webkit-appearance: none;
+    border: 0.5px;
     /*outline: 0;*/
-    /*!*background-color: #ffffff;*!*/
-    /*background-color: transparent;*/
+    /*background-color: #ffffff;*/
+    background-color: transparent;
     /*width: 100%;*/
-    /*font-size: inherit;*/
+    font-size: inherit;
+    color: #f37474;
     /*height: 50px;*/
     /*line-height: 40px;*/
-    /*position: relative;*/
-    /*z-index: 1;*/
+    position: relative;
+    z-index: 1;
     /*padding-left: 50px;!*查询条件文字*!*/
-    /*!*cursor: pointer;*!*/
-/*}*/
+    /*cursor: pointer;*/
+}
+/*答辩状态*/
+.passSelect {
+    -webkit-appearance: none;
+    border: 0.5px;
+    /*outline: 0;*/
+    /*background-color: #ffffff;*/
+    background-color: transparent;
+    /*width: 100%;*/
+    font-size: inherit;
+    color: #f37474;
+    /*height: 50px;*/
+    /*line-height: 40px;*/
+    position: relative;
+    z-index: 1;
+    /*padding-left: 50px;!*查询条件文字*!*/
+    /*cursor: pointer;*/
+}
+
+
+
+.mweui-select {
+    -webkit-appearance: none;
+    border: 0.5px;
+    /*outline: 0;*/
+    /*background-color: #ffffff;*/
+    background-color: transparent;
+
+    font-size: inherit;
+    /*height: 50px;*/
+    /*line-height: 40px;*/
+    position: relative;
+    z-index: 1;
+    /*padding-left: 50px;!*查询条件文字*!*/
+    /*cursor: pointer;*/
+}
 /*列表和选择框的右箭头*/
 /*.mweui-cell_select .mweui-cell__bd:after {*/
 .mweui-cell_select :after {
@@ -395,7 +470,8 @@ em, i {
     position: relative;
 }
 .aui-zd {
-    color: #ed4040;
+    color: #f37474;
+    /*color: #ed4040;*/
     font-size: 11px;
     padding: 1px 4px;
     margin-right: 5px;
@@ -422,7 +498,7 @@ em, i {
     position: relative;
 }
 .aui-zd-large {
-    color: #ed4040;
+    color: #f37474;
     font-size: 13px;
     padding: 1px 4px;
     margin-right: 5px;

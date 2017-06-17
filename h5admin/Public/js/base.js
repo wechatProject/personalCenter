@@ -3,6 +3,30 @@
     //学生信息、授课信息、综合实践信息、论文指导信息
     var Basicinfo = {
 
+        // getRuXueOptions: function(){
+        //
+        //     var urlstring = apiConfig.getInfoOptions;
+        //     $.ajax({
+        //         async: false,
+        //         type: 'GET',
+        //         url: urlstring,
+        //         dataType: 'json',
+        //         success: function (data) {
+        //
+        //             if (data.errcode == "0") {
+        //                 var str = "<option value=\"\" selected=\"selected\">入学年份</option>";
+        //                 for (var j = 0; j < data.data.length; j++) {
+        //                     str += "<option value=\"" + data.data[j].id + "\">" + data.data[j].order + "</option>";
+        //                 }
+        //                 $("#graSelect").html(str);
+        //             }
+        //         },
+        //         error: function () {
+        //             console.log('获取选项信息失败');
+        //         }
+        //     });
+        // },
+
         /**
          * 学生信息
          */
@@ -14,6 +38,12 @@
             var thesisPara = "开题状态";//状态,默认所有状态
             var passPara = "答辩状态";//状态,默认所有状态
 
+            //用于选择查询条件后,文字变色
+            var gradeParaid = 0;
+            var inerParaid = 0;
+            var thesisParaid = 0;
+            var passParaid = 0;
+
             //获取所有学生信息列表
             var allstuObj = Basicinfo.getAllStudentlist();
 
@@ -24,8 +54,15 @@
 
             //筛选结果
             //按年级
-            $("#graSelect").change(function(){
-                gradePara = $("select[name=graSelect] option").not(function(){ return !this.selected }).text();
+            $("#graSelect1").change(function(){
+                gradePara = $("select[name=graSelect1] option").not(function(){ return !this.selected }).text();
+                gradeParaid = $("select[name=graSelect1] option").not(function(){ return !this.selected }).val();
+                if(gradeParaid!=0){//选择某个选项,改变所选择筛选条件的字体颜色
+                    console.log("gra selelet");
+                    $("#graSelect1").prop('class','mweui-select graSelect1');
+                }else{
+                    $("#graSelect1").prop('class','mweui-select');
+                }
                 //获取符合条件的学生信息列表
                 var stuObj = Basicinfo.getStudentlist(gradePara,inerPara,thesisPara,passPara,allstuObj);
                 //动态加载符合条件的学生列表
@@ -34,6 +71,12 @@
             //按实习状态
             $("#inerSelect").change(function(){
                 inerPara = $("select[name=inerSelect] option").not(function(){ return !this.selected }).text();
+                inerParaid = $("select[name=inerSelect] option").not(function(){ return !this.selected }).val();
+                if(inerParaid!=0){//选择某个选项,改变所选择筛选条件的字体颜色
+                    $("#inerSelect").prop('class','mweui-select inerSelect');
+                }else{
+                    $("#inerSelect").prop('class','mweui-select');
+                }
                 //获取符合条件的学生信息列表
                 var stuObj = Basicinfo.getStudentlist(gradePara,inerPara,thesisPara,passPara,allstuObj);
                 //动态加载符合条件的学生列表
@@ -42,6 +85,12 @@
             //按开题状态
             $("#thesisSelect").change(function(){
                 thesisPara = $("select[name=thesisSelect] option").not(function(){ return !this.selected }).text();
+                thesisParaid = $("select[name=thesisSelect] option").not(function(){ return !this.selected }).val();
+                if(thesisParaid!=0){//选择某个选项,改变所选择筛选条件的字体颜色
+                    $("#thesisSelect").prop('class','mweui-select thesisSelect');
+                }else{
+                    $("#thesisSelect").prop('class','mweui-select');
+                }
                 //获取符合条件的学生信息列表
                 var stuObj = Basicinfo.getStudentlist(gradePara,inerPara,thesisPara,passPara,allstuObj);
                 //动态加载符合条件的学生列表
@@ -50,6 +99,12 @@
             //按答辩状态
             $("#passSelect").change(function(){
                 passPara = $("select[name=passSelect] option").not(function(){ return !this.selected }).text();
+                passParaid = $("select[name=passSelect] option").not(function(){ return !this.selected }).val();
+                if(passParaid!=0){//选择某个选项,改变所选择筛选条件的字体颜色
+                    $("#passSelect").prop('class','mweui-select passSelect');
+                }else{
+                    $("#passSelect").prop('class','mweui-select');
+                }
                 //获取符合条件的学生信息列表
                 var stuObj = Basicinfo.getStudentlist(gradePara,inerPara,thesisPara,passPara,allstuObj);
                 //动态加载符合条件的学生列表
@@ -248,9 +303,10 @@
              Basicinfo.showCourseList(courselist_term2,2);//第二学期
 
             //按学年查询
-            $("#yearSelect").change(function(){
+            $("#graSelect").change(function(){
+                console.log("year select");
                 //获取筛选条件 -- 学年
-                yearPara = $("select[name=yearSelect] option").not(function(){ return !this.selected }).val();
+                yearPara = $("select[name=graSelect] option").not(function(){ return !this.selected }).val();
                 //获取课程列表
                 courselist_term1 = Basicinfo.getCourselist(yearPara,1);//第一学期
                 courselist_term2 = Basicinfo.getCourselist(yearPara,2);//第二学期
@@ -347,16 +403,11 @@
             }
         },
 
-
         /**
          * 综合实践工作量
          */
         queryPracticeWork: function(){
-
-            var yearName = $('#opt_0').text();
-
-            //获取综合实践工作量对象
-            var pracWorkObj = Basicinfo.getPracticeWorkList(yearName);
+            pracWorkObj = "123";//测试显示列表
             //动态加载综合实践工作量列表
             Basicinfo.showPracinfoList(pracWorkObj);
 
@@ -538,15 +589,29 @@
 
                     //工作量列表
                     dom += "<div class=\"mweui-cells__title\"><b><span id=\"time_name2\" class=\"\"><span class='time_year'>" + paperworkObj[i].time_name + "</span></span></b></div>" +
-                        "<div class=\"weui-cells\">" +
-                        "<div class=\"weui-cell\">" +
-                        "<div class=\"weui-cell__bd\">" +
-                        "<p>通过答辩人数: <span>" + paperworkObj[i].stu_count + "</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\">工作量: <span>" + paperworkObj[i].sum + "</span></span></p>" +
-                        "</div>" +
-                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"><span>" + paperworkObj[i].location + "</span></div>" +
-                        "</div>" +
-                        "</div>";
+                                "<div class=\"weui-cells\">" +
+                                    "<div class=\"weui-cell\">" +
+                                    "   <div class=\"weui-cell__bd\">" +
+                                            "<p>通过答辩人数</p>" +
+                                        "</div>" +
+                                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">"+paperworkObj[i].stu_count+"</div>" +
+                                    "</div>" +
 
+                                    "<div class=\"weui-cell\">" +
+                                        "<div class=\"weui-cell__bd\">" +
+                                            "<p>工作量</p>" +
+                                        "</div>" +
+                                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">"+paperworkObj[i].sum+"</div>" +
+                                    "</div>" +
+
+                                    "<div class=\"weui-cell\">" +
+                                        "<div class=\"weui-cell__bd\">" +
+                                            "<p>所属校区</p>" +
+                                        "</div>" +
+                                        "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">"+paperworkObj[i].location+"</div>" +
+                                    "</div>" +
+                                "</div>" +
+                            "</div>";
                 }
                 dom += "</div>";
 
@@ -561,8 +626,11 @@
                     "</div>";
 
             }
+
             $("#paperwork").html(dom);
-        }
+
+
+        },
     };
 
     var rBasicinfo = function(){
