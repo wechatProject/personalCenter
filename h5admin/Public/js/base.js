@@ -238,7 +238,7 @@
         queryTeachWork: function(){
 
             //默认查询条件,学年,默认取id = 3 , 表示当前学年 ,格式:2016-2017
-            var yearPara = 3;
+            var yearPara = $('#opt_0').val();
 
             //获取课程列表
             courselist_term1 = Basicinfo.getCourselist(yearPara,1);//第一学期

@@ -27,9 +27,10 @@
                     <!--学年,默认取当前学年,如2016-2017-->
                     <b>
                     <select id="yearSelect" class="mweui-select yearSelect" name="yearSelect">
-                        <option value="3">2016-2017</option>
-                        <option value="2">2015-2016</option>
-                        <option value="1">2014-2015</option>
+                        {%foreach from=$year item=it key=key %}
+
+                        <option id="opt_{%$key%}"  value="{%$it.id%}">{%$it.name%}</option>
+                        {%/foreach%}
                     </select>
                     <span>学年课程列表</span>
                     </b>

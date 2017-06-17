@@ -10,15 +10,16 @@ use Think\Controller;
  * 授课课时工作量  -- 没完成(没有给接口)
  */
 class TeachWorkController extends Controller {
-//    public function index(){
-//
-//        session('[start]');
-//        $_SESSION['userid'] = '1601210606';  //用于在网页进行测试
-//
-//        $this->display();
-////        $this->display('index-v2');
-//
-//    }
+    public function index(){
+
+        session('[start]');
+        $_SESSION['userid'] = '1601210606';  //用于在网页进行测试
+
+        $yearArr = getYearList();
+        $this->assign('year',$yearArr);
+
+        $this->display();
+    }
 
 
     //获取该导师指导下的学生信息列表(接收前端StudentInfo/index.html的ajax请求)
