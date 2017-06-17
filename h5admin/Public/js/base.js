@@ -364,22 +364,58 @@
          */
         showPracinfoList: function(pracWorkObj){
             var dom = '';
-            if(pracWorkObj) {
+            var dom1 = '';
+
+            //工作量比例
+            dom += "<div class=\"mweui-cells__title\"><b>工作量比例</b></div>" +
+                        "<div class=\"weui-cells\">" +
+                            "<div class=\"weui-cell\">" +
+                                "<div class=\"weui-cell__bd\">"+
+                                    "<p><span>导师:吴中海</span></p>"+
+                                "</div>"+
+                                "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">0%</div>" +
+                            "</div>"+
+                            "<div class=\"weui-cell\">"+
+                                "<div class=\"weui-cell__bd\">"+
+                                    "<p><span>协助导师:张齐勋</span></p>"+
+                                "</div>"+
+                            "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">100%</div>"+
+                        "</div>"+
+                    "</div>";
+
+            $("#pracWork_desc").html(dom);
+
+
+            //综合实践工作量s
+            dom1 += "<div class=\"mweui-cells__title\"><b>"+"综合实践工作量"+"</b></div>" +
+                " <div class=\"weui-cells\">" ;
+
+
+            if(pracWorkObj.length != 0) {//有信息
+
                 for (var i = 0; i < pracWorkObj.length; i++) {
-                    dom += "<div class=\"weui-media-box weui-media-box_text\">" +
-                        "<p class=\"mweui-media-box__desc\"><span>综合实践:</span> <span>1班</span></p>" +
-                        "<ul class=\"weui-media-box__info\">" +
-                        "<li class=\"weui-media-box__info__meta\">人数: <span>5</span>人</li>"+
-                        "<li class=\"weui-media-box__info__meta\">工作量所占百分比:<span>100</span>%</li>"+
-                        "</ul>"+
-                        "<ul class=\"weui-media-box__info\">" +
-                        "<li class=\"weui-media-box__info__meta\">所属校区: <span>北京</span></li>"+
-                        "<li class=\"weui-media-box__info__meta weui-media-box__info__meta_extra\"><span>16-17学年</span></li>"+
-                        "</ul>"+
-                        "</div>";
+
+                    //工作量列表
+                    dom1 += "<div class=\"weui-cell\">" +
+                                "<div class=\"weui-cell__bd\">" +
+                                    "<p>综合实践<span>1班</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"><span>5</span>人</span></p>" +
+                                "</div>" +
+                                "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\">北京</div>" +
+                            "</div>";
+
                 }
-                $("#pracWork").html(dom);
+                dom1 += "</div>";
+
+            }else{//无信息
+                dom1 += "<div class=\"weui-cell\">" +
+                    "<div class=\"weui-cell__bd\">" +
+                    "<p><span>无</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"></p>" +
+                    "</div>" +
+                    "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"></div>" +
+                    "</div>";
+
             }
+            $("#pracWorkList").html(dom1);
         },
 
 

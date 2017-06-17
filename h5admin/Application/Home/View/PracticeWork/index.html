@@ -41,48 +41,20 @@
     <!--条件查询结果-->
     <!--<div class="weui-cells__title"><span>16-17学年度</span><span>第二学期</span>授课总课时为<span class="total-num">48</span></div>-->
 
-    <!--课程列表-->
-    <!--春季课程列表-->
-    <div class="mweui-cells__title"><b>工作量比例</b></div>
-    <div class="weui-cells">
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p><span>导师:吴中海</span></p>
-            </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">0%</div>
-        </div>
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p><span>协助导师:张齐勋</span></p>
-            </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">100%</div>
-        </div>
-    </div>
+    <!--综合实践,动态加载-->
+    <!--工作量比例-->
+    <div id="pracWork_desc"></div>
 
     <!--综合实践工作量列表-->
-    <div class="mweui-cells__title"><b>综合实践工作量</b></div>
-    <div class="weui-cells">
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p><span>1班</span><span class="course-item" style="float: right;padding-right: 30px"><span>5</span>人</span></p>
-            </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">北京</div>
-        </div>
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p><span>2班</span><span class="course-item" style="float: right;padding-right: 30px"><span>3</span>人</span></p>
-            </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">无锡</div>
-        </div>
-    </div>
+    <div id="pracWorkList"></div>
 
 </div>
 </div>
 </div>
 </body>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/zepto.alert.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/config.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/base.js"></script>
 <script>
+    Basicinfo.queryPracticeWork();//条件查询综合实践列表
 </script>
-</html>
