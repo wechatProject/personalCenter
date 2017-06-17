@@ -27,9 +27,9 @@
                     <!--入学年份选择,默认为当前学年(研一的新生)-->
                     <b>
                         <select id="graSelect" class="mweui-select graSelect" name="graSelect">
-                            <option value="1">2016-2017</option>
+                            <option value="3">2016-2017</option>
                             <option value="2">2015-2016</option>
-                            <option value="3">2014-2015</option>
+                            <option value="1">2014-2015</option>
                         </select>
                         <span>学年指导论文工作量</span>
                     </b>
@@ -43,24 +43,32 @@
 
     <!--遍历:2017年1月,2017年7月,每个答辩时间段的记录可能有1条或2条(北京、无锡)-->
 
-    <!--列表-->
-    <div class="mweui-cells__title"><b><span id="time_name" class="">2017年1月论文答辩</span></b></div>
+    <!--指导论文工作量列表,动态加载-->
+    <!--答辩时段1-->
+    <div class="mweui-cells__title"><b><span id="time_name" class=""><span>2017年1月论文答辩</span></span></b></div>
     <div class="weui-cells">
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p><span>通过论文答辩16人</span><span class="course-item" style="float: right;padding-right: 30px">工作量13.2</span></p>
+                <p>通过答辩人数: <span>16</span><span class="course-item" style="float: right;padding-right: 30px">工作量: <span>13.2</span></span></p>
             </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">北京</div>
+            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline"><span>北京</span></div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>通过答辩人数: <span>20</span><span class="course-item" style="float: right;padding-right: 30px">工作量: <span>13.2</span></span></p>
+            </div>
+            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline"><span>无锡</span></div>
         </div>
     </div>
 
-    <div class="mweui-cells__title"><b><span id="time_name2" class="">2017年7月论文答辩</span></b></div>
+    <!--答辩时段2-->
+    <div class="mweui-cells__title"><b><span id="time_name2" class=""><span>2017年7月论文答辩</span></span></b></div>
     <div class="weui-cells">
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <p><span>通过论文答辩16人</span><span class="course-item" style="float: right;padding-right: 30px">工作量13.2</span></p>
+                <p>通过答辩人数: <span>16</span><span class="course-item" style="float: right;padding-right: 30px">工作量: <span>13.2</span></span></p>
             </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">北京</div>
+            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline"><span>北京</span></div>
         </div>
     </div>
 

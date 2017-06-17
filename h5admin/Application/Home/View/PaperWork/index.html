@@ -1,5 +1,5 @@
 <!--工作量统计 -- 指导论文:查询条件+ 通过答辩学生列表-->
-<!--display方式-->
+<!--动态加载-->
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
 <head lang="en">
@@ -27,9 +27,9 @@
                     <!--入学年份选择,默认为当前学年(研一的新生)-->
                     <b>
                         <select id="graSelect" class="mweui-select graSelect" name="graSelect">
-                            <option value="1">2016-2017</option>
+                            <option value="3">2016-2017</option>
                             <option value="2">2015-2016</option>
-                            <option value="3">2014-2015</option>
+                            <option value="1">2014-2015</option>
                         </select>
                         <span>学年指导论文工作量</span>
                     </b>
@@ -43,26 +43,12 @@
 
     <!--遍历:2017年1月,2017年7月,每个答辩时间段的记录可能有1条或2条(北京、无锡)-->
 
-    <!--列表-->
-    <div class="mweui-cells__title"><b><span id="time_name" class="">2017年1月论文答辩</span></b></div>
-    <div class="weui-cells">
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p><span>通过论文答辩16人</span><span class="course-item" style="float: right;padding-right: 30px">工作量13.2</span></p>
-            </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">北京</div>
-        </div>
-    </div>
+    <!--指导论文工作量列表,动态加载-->
+    <div id="paperwork"></div>
 
-    <div class="mweui-cells__title"><b><span id="time_name2" class="">2017年7月论文答辩</span></b></div>
-    <div class="weui-cells">
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <p><span>通过论文答辩16人</span><span class="course-item" style="float: right;padding-right: 30px">工作量13.2</span></p>
-            </div>
-            <div class="weui-cell__ft" style="color: #5facbe;text-decoration: underline">北京</div>
-        </div>
-    </div>
+
+
+
 
 
 
@@ -71,16 +57,9 @@
 </div>
 </body>
 <script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/zepto.alert.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/config.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/base.js"></script>
 <script>
-    $(function () {
-        $('#searchSubmit').click(function () {
-            //提交查询条件
-//            $('#searchPaperwork').submit();
-            //测试 可删除
-            location.href="index.html";
-        });
-    });
+    Basicinfo.queryPaperWork();//条件指导论文工作量列表
 </script>
 </html>
