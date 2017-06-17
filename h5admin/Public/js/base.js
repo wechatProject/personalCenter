@@ -407,7 +407,14 @@
          * 综合实践工作量
          */
         queryPracticeWork: function(){
-            pracWorkObj = "123";//测试显示列表
+            pracWorkObj = "";//测试显示列表
+
+            //默认查询条件,学年,默认取id = 3 , 表示当前学年 ,格式:2016-2017
+            var yearName = $('#opt_0').val();
+
+            //初始化显示
+            //获取列表
+            pracWorkObj = Basicinfo.getPracticeWorkList(yearName);
             //动态加载综合实践工作量列表
             Basicinfo.showPracinfoList(pracWorkObj);
 
@@ -415,7 +422,7 @@
             $("#graSelect").change(function(){
                 //获取筛选条件 -- 学年
                 yearName = $("select[name=graSelect] option").not(function(){ return !this.selected }).text();
-                //获取课程列表
+                //获取列表
                 pracWorkObj = Basicinfo.getPracticeWorkList(yearName);
                 //动态加载综合实践工作量列表
                 Basicinfo.showPracinfoList(pracWorkObj);
