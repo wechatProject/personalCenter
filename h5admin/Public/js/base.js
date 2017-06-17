@@ -506,14 +506,14 @@
 
                 dom += "<div class=\"weui-cell\">" +
                     "<div class=\"weui-cell__bd\">" +
-                    "<p><span>无</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"></p>" +
+                    "<p style='text-align: center'><span>无</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"></p>" +
                     "</div>" +
                     "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"></div>" +
                     "</div>";
 
                 dom1 += "<div class=\"weui-cell\">" +
                     "<div class=\"weui-cell__bd\">" +
-                    "<p><span>无</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"></p>" +
+                    "<p style='text-align: center'><span>无</span><span class=\"course-item\" style=\"float: right;padding-right: 30px\"></p>" +
                     "</div>" +
                     "<div class=\"weui-cell__ft\" style=\"color: #5facbe;text-decoration: underline\"></div>" +
                     "</div>";
