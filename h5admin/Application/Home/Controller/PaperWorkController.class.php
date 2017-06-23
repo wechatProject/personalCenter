@@ -9,7 +9,7 @@ use Think\Controller;
  * 指导论文工作量
  *
  */
-class PaperWorkController extends Controller {
+class PaperWorkController extends CommonController {
 
     public function index(){
         //获取学年列表 , 用于前端筛选条件

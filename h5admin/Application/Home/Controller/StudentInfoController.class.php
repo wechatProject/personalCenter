@@ -14,12 +14,12 @@ use Think\Log;
  * 就业信息      jobinfo
  * 答辩信息      defense
  */
-class StudentInfoController extends Controller  {
+class StudentInfoController extends CommonController  {
 
     public function index(){
 
-        session('[start]');//启动session
-        $_SESSION['userid'] = '1601210606';  //用于在网页进行测试
+        //session('[start]');//启动session
+        //$_SESSION['userid'] = '1601210606';  //用于在网页进行测试
 
         //获取学年列表 , 用于前端筛选条件
         $yearArr = getYearList();

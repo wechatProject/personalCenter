@@ -9,11 +9,11 @@ use Think\Controller;
  *
  * 授课课时工作量
  */
-class TeachWorkController extends Controller {
+class TeachWorkController extends CommonController {
 
     public function index(){
-        session('[start]');//启动session
-        $_SESSION['userid'] = '1601210606';  //用于在网页进行测试
+        //session('[start]');//启动session
+        //$_SESSION['userid'] = '1601210606';  //用于在网页进行测试
 
         //获取学年列表 , 用于前端筛选条件
         $yearArr = getYearList();
