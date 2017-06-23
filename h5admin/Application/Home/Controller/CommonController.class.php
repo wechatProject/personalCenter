@@ -9,10 +9,12 @@ class CommonController extends Controller
     //微信网页授权,获取用户ID -- 本地调试可以先注释掉
     public function __construct()
     {
-        parent::__construct();
 
-        session('[start]');
+        parent::__construct();//调用父类的构造函数
 
+        session('[start]');//启动session
+
+        //?
         if (!IS_AJAX) {
             if (!session('?userid')) {
                 if (isset($_GET['code'])) {

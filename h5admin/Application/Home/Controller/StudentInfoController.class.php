@@ -7,24 +7,25 @@ use Think\Log;
 /**
  * 学生信息
  * 包括:
- * 指导学列表index
- * 学生详细信息stuinfo
- * 实习信息inerinfo
- * 开题信息thesisinfo
- * 就业信息jobinfo
+ * 指导学列表     index
+ * 学生详细信息   stuinfo
+ * 实习信息      inerinfo
+ * 开题信息      thesisinfo
+ * 就业信息      jobinfo
+ * 答辩信息      defense
  */
 class StudentInfoController extends Controller  {
 
     public function index(){
 
-        session('[start]');
+        session('[start]');//启动session
         $_SESSION['userid'] = '1601210606';  //用于在网页进行测试
 
+        //获取学年列表 , 用于前端筛选条件
         $yearArr = getYearList();
         $this->assign('year',$yearArr);
 
         $this->display();
-
     }
 
     //获取该导师指导下的学生信息列表(接收前端StudentInfo/index.html的ajax请求)
@@ -53,10 +54,11 @@ class StudentInfoController extends Controller  {
         //是否开题      ktconfirm     0或null - 未开题 , 1 -已开题
         //是否通过答辩   paperPass     0或null - 未通过 , 1 -已通过
 
-        //当前状态(6种):未实习、实习中、实习结束(未开题)、已开题、未通过答辩、已通过答辩
-        //实习状态(3种):未实习(lxConfirm=null)、实习中(lxConfirm=1&jxConfirm=null)、实习结束实习中(lxConfirm=1&jxConfirm=1)
-        //开题状态(2种):未开题(ktconfirm=null)、已开题(lxConfirm=1 & jxConfirm=1 & ktconfirm=1)
-        //答辩状态(3种):无(未申请答辩)(paperPass=null)、未通过答辩(paperPass=null)、已通过答辩(lxConfirm=1 & jxConfirm=1 & ktconfirm=1 & paperPass=1)
+        //当前状态(6种):未立项、已立项、已结项、未开题、已开题、未通过答辩、已通过答辩
+        //实习状态(3种):未立项(lxConfirm=null)、已立项(lxConfirm=1&jxConfirm=null)、已结项(jxConfirm=1)
+        //开题状态(2种):未开题(ktconfirm=null)、已开题(ktconfirm=1)
+        //答辩状态(2种):未通过答辩(包括未申请答辩和已经答辩未通过)(paperPass=null)、已通过答辩(paperPass=1)
+
         foreach($stuArr as $key=>$value){
 
             //学号存入状态列表
@@ -268,10 +270,11 @@ class StudentInfoController extends Controller  {
         $this->display();
     }
 
+    //答辩信息
     public function defense(){
         //获取学生学号
         $stuId = $_GET['stuId'];
-        //获取该学生就业信息
+        //获取该学生答辩信息
         $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
         $url = "https://api.mysspku.com/index.php/V2/StudentInfo/getPaperProcess?stuid=".$stuId."&token=".$acc;
         //返回json数据包
@@ -279,6 +282,7 @@ class StudentInfoController extends Controller  {
         //将json格式转换为数组
         $arr = json_decode($json,true);
 
+        //获取前端需要的字段
         $title = $arr['data']['title'];
         $assistor = $arr['data']['assistor'];
         $assistormail = $arr['data']['assistormail'];
@@ -287,6 +291,7 @@ class StudentInfoController extends Controller  {
         $eFinalStatus = $arr['data']['eFinalStatus'] == '1' ? '提交成功' : '提交失败或未提交';
         $printFinalStatus = $arr['data']['printFinalStatus'] == '1' ? '提交成功' : '提交失败或未提交';
 
+        //赋值给前端
         $this->assign('title',$title);
         $this->assign('assistor',$assistor);
         $this->assign('assistormail',$assistormail);

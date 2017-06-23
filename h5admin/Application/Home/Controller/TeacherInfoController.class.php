@@ -8,8 +8,10 @@ namespace Home\Controller;
  */
 class TeacherInfoController extends CommonController{
     public function index(){
+        //获取教师ID
         $userid = $_SESSION['userid'];
 
+        //token , 测试为32个小写a
         $acc = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 
         //用api获取前端状态信息
@@ -20,7 +22,7 @@ class TeacherInfoController extends CommonController{
         //将json格式转换为数组
         $arr = json_decode($json,true);
 
-
+        //前端需要显示的状态信息
         $userid = $_SESSION['userid']?$_SESSION['userid']:"无";
         $name = $arr['data']['name'];
         $gender = $arr['data']['gender'];
