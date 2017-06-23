@@ -17,14 +17,12 @@
 <body>
 
 <div class="wrap">
-    <!--<br>-->
     <!--查询条件-->
-    <!--flex四列布局-->
     <div class="mweui-cells2">
         <div class="mweui-flex">
             <div class="mweui-flex__item">
                 <div class="placeholder">
-                    <!--入学年份选择,默认为当前学年(研一的新生)-->
+                    <!--学年选择,默认为当前学年(通过接口获取)-->
                     <b>
                         <select id="graSelect" class="mweui-select graSelect" name="graSelect">
                             {%foreach from=$year item=it key=key %}

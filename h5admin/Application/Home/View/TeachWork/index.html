@@ -24,7 +24,7 @@
         <div class="mweui-flex">
             <div class="mweui-flex__item">
                 <div class="placeholder">
-                    <!--学年,默认取当前学年,如2016-2017-->
+                    <!--学年选择,默认为当前学年(通过接口获取),如2016-2017-->
                     <b>
                     <select id="graSelect" class="mweui-select graSelect" name="graSelect">
                         {%foreach from=$year item=it key=key %}
@@ -38,11 +38,6 @@
             </div>
         </div>
     </div>
-
-
-    <!--条件查询结果-->
-    <!--<div class="weui-cells__title"><span>16-17学年度</span><span>第二学期</span>授课总课时为<span class="total-num">48</span></div>-->
-
 
     <!--课程列表(动态加载)-->
     <!--第一学期(秋季)课程列表-->

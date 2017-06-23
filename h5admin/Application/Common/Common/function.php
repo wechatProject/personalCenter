@@ -1,14 +1,17 @@
-<?php
+/**
+ * 公共函数
+ */
 
+<?php
 //将取到的导师下学生信息(二维数组)根据$row(学号)进行排序
 function array_sort($array,$row,$mark){
     $array_temp = array();
     foreach($array as $v){
         $array_temp[$v[$row]] = $v;
     }
-    if($mark == 'ascend'){
+    if($mark == 'ascend'){//升序
         ksort($array_temp);
-    }else if($mark == 'descend'){
+    }else if($mark == 'descend'){//降序
         krsort($array_temp);
     }
     $new_array = array();
@@ -51,6 +54,4 @@ function getTermList(){
     return $arr;
 
 }
-
-
 ?>

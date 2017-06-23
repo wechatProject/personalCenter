@@ -15,12 +15,11 @@
 
 <div class="wrap">
 
-    <!--flex四列布局-->
     <div class="mweui-cells2">
         <div class="mweui-flex">
             <div class="mweui-flex__item">
                 <div class="placeholder">
-                    <!--入学年份选择,默认为当前学年(研一的新生)-->
+                    <!--学年选择,默认为当前学年(通过接口获取),如2016-2017-->
                     <select id="graSelect1" class="mweui-select" name="graSelect1">
                         <option value="0" selected="selected">入学年份</option>
                         {%foreach from=$year item=it%}
