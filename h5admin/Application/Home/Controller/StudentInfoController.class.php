@@ -63,6 +63,8 @@ class StudentInfoController extends CommonController  {
 
             //学号存入状态列表
             $staArr[$key]['stuid']=$stuArr[$key]["stuid"];
+            //将stuid存入session
+            $_SESSION['stuids'][key] = $stuArr[$key]["stuid"];
 
             if($value["lxConfirm"] == null){                  //未立项
 
@@ -99,6 +101,9 @@ class StudentInfoController extends CommonController  {
             $staArr[$key]['inerStatus']=$stuArr[$key]["inerStatus"];
             $staArr[$key]['thesisStatus']=$stuArr[$key]["thesisStatus"];
             $staArr[$key]['passStatus']=$stuArr[$key]["passStatus"];
+
+
+
         }
 
         //需要对$stuArr数组排序
@@ -128,6 +133,22 @@ class StudentInfoController extends CommonController  {
     public function stuinfo(){
         //获取学生学号
         $stuId = $_GET['stuId'];
+
+        //判断当前查询学号是否合法
+        $legal = false;
+        foreach($_SESSION['stuids'] as $key=>$value){
+            if($_SESSION['stuids'][key] == $stuId)
+            {
+                $legal = true;
+                break;
+            }
+        }
+        //如果当前查询学号不合法，返回查询异常
+        if($legal == false){
+            $result['meta']=array('code' => "49999", 'error' => "illegal access", 'info' => "error");
+            $this->ajaxReturn($result);
+        }
+
         //获取当前学生的状态
         //$stuSta = $_GET['stuSta'];//当前状态
         $stuInerSta = $_GET['stuInerSta'];//实习状态
