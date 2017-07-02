@@ -14,7 +14,7 @@
             var thesisPara = "开题状态";//状态,默认所有状态
             var passPara = "答辩状态";//状态,默认所有状态
 
-            //用于选择查询条件后,文字变色
+            //用于选择查询条件后,文字变色(只有显示状态内容时变色)
             var gradeParaid = 0;
             var inerParaid = 0;
             var thesisParaid = 0;
@@ -32,6 +32,7 @@
             //按年级
             $("#graSelect1").change(function(){
                 gradePara = $("select[name=graSelect1] option").not(function(){ return !this.selected }).text();
+
                 gradeParaid = $("select[name=graSelect1] option").not(function(){ return !this.selected }).val();
                 if(gradeParaid!=0){//选择某个选项,改变所选择筛选条件的字体颜色
                     console.log("gra selelet");
@@ -39,6 +40,7 @@
                 }else{
                     $("#graSelect1").prop('class','mweui-select');
                 }
+
                 //获取符合条件的学生信息列表
                 var stuObj = Basicinfo.getStudentlist(gradePara,inerPara,thesisPara,passPara,allstuObj);
                 //动态加载符合条件的学生列表
@@ -157,21 +159,21 @@
             }else{//学生信息列表非空
 
                 //筛选 -- 按年级
-                var copy = stuObj;
-                var select = [];
+                var copy = stuObj;//需要筛选的数据
+                var select = [];//筛选后的数据
                 if(gradePara == "入学年份") {
                     select = copy;
                 } else {
                     for (var i = 0; i < copy.length; i++) {//添加符合条件的元素 -- 年级
                         if (copy[i].grade == gradePara) {
-                            select.push(copy[i]);
+                            select.push(copy[i]);//对需要筛选的数据遍历,将符合条件的元素存入select数组
                         }
                     }
                 }
 
                 //筛选 -- 按实习状态
-                copy = select;
-                select = [];
+                copy = select;//需要筛选的数据
+                select = [];//筛选后的数据
                 if(inerPara == "实习状态") {
                     select = copy;
                 } else {
@@ -183,8 +185,8 @@
                 }
 
                 //筛选 -- 按开题状态
-                copy = select;
-                select = [];
+                copy = select;//需要筛选的数据
+                select = [];//筛选后的数据
                 if(thesisPara == "开题状态") {
                     select = copy;
                 } else {
@@ -196,8 +198,8 @@
                 }
 
                 //筛选 -- 按答辩状态
-                copy = select;
-                select = [];
+                copy = select;//需要筛选的数据
+                select = [];//筛选后的数据
                 if(passPara == "答辩状态") {
                     select = copy;
                 } else {
