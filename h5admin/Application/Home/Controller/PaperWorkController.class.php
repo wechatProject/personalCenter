@@ -23,6 +23,9 @@ class PaperWorkController extends CommonController {
      * 获取论文工作量数据 (接收前端base.js中的ajax请求)
      */
     public function getPaperInfo(){
+        //获取信息接口token
+        $token =  C('ACCESS_TOKEN');
+
 
         //获取教师id
         $teacherId = $_SESSION['userid'];
@@ -31,7 +34,6 @@ class PaperWorkController extends CommonController {
         $yearId = $_POST['yearPara'];
 
         //获取论文工作量json数据包(来源:老师给的接口)
-        $token = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
         $url = 'https://api.mysspku.com/index.php/V2/TeacherInfo/getPaper?teacherid='.$teacherId.'&yearid='.$yearId.'&token='.$token;
         //返回json数据包
         $json = file_get_contents($url);

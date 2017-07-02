@@ -25,6 +25,8 @@ class TeachWorkController extends CommonController {
 
     //获取该导师指导下的学生信息列表(接收前端StudentInfo/index.html的ajax请求)
     public function getCourselist() {
+        //获取信息接口token
+        $acc =  C('ACCESS_TOKEN');
 
         //使用上述查询条件调用api获取学生列表
         $teacherid = $_SESSION['userid'];
@@ -33,9 +35,7 @@ class TeachWorkController extends CommonController {
         $year_name = $_POST['year_name'];
         $term_name = $_POST['term_name'];
 
-
         //获取课程信息数据包
-        $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
         $url = "https://api.mysspku.com/index.php/V2/TeacherInfo/getCourse?teacherid=".$teacherid."&yearid=".$year_name."&termid=".$term_name."&token=".$acc;
 
         //返回json数据包

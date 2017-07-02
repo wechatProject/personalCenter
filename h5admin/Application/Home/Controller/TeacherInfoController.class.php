@@ -8,11 +8,12 @@ namespace Home\Controller;
  */
 class TeacherInfoController extends CommonController{
     public function index(){
+        //获取信息接口token
+        $acc = C('ACCESS_TOKEN');
+//        $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+
         //获取教师ID
         $userid = $_SESSION['userid'];
-
-        //token , 测试为32个小写a
-        $acc = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 
         //用api获取前端状态信息
         $url = "https://api.mysspku.com/index.php/V2/TeacherInfo/getDetail?teacherid=".$userid."&token=".$acc;
@@ -24,12 +25,12 @@ class TeacherInfoController extends CommonController{
 
         //前端需要显示的状态信息
         $userid = $_SESSION['userid']?$_SESSION['userid']:"无";
-        $name = $arr['data']['name'];
-        $gender = $arr['data']['gender'];
-        $title = $arr['data']['title'];
-        $telephone = $arr['data']['telephone'];
-        $mail = $arr['data']['mail'];
-        $imgurl = $arr['data']['imgurl'];
+        $name = $arr['data']['name']?$arr['data']['name']:"";
+        $gender = $arr['data']['gender']?$arr['data']['gender']:"";
+        $title = $arr['data']['title']?$arr['data']['title']:"无";
+        $telephone = $arr['data']['telephone']?$arr['data']['telephone']:"无";
+        $mail = $arr['data']['mail']?$arr['data']['mail']:"无";
+        $imgurl = $arr['data']['imgurl']?$arr['data']['imgurl']:"";
 
 
         //将状态信息赋值到前端

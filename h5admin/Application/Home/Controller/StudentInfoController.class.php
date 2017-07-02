@@ -31,11 +31,13 @@ class StudentInfoController extends CommonController  {
     //获取该导师指导下的学生信息列表(接收前端StudentInfo/index.html的ajax请求)
     public function getAllStduentlist() {
 
+        //api token
+        $acc =  C('ACCESS_TOKEN');
+
         //使用上述查询条件调用api获取学生列表
         $teacherid = $_SESSION['userid'];
 
-        $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
-
+        //构造学生信息接口url
         $url = "https://api.mysspku.com/index.php/V2/TeacherInfo/getStudents?teacherid=".$teacherid."&token=".$acc;
 
         //返回json数据包
@@ -59,12 +61,13 @@ class StudentInfoController extends CommonController  {
         //开题状态(2种):未开题(ktconfirm=null)、已开题(ktconfirm=1)
         //答辩状态(2种):未通过答辩(包括未申请答辩和已经答辩未通过)(paperPass=null)、已通过答辩(paperPass=1)
 
+        //为每个学生设置当前状态
         foreach($stuArr as $key=>$value){
 
             //学号存入状态列表
             $staArr[$key]['stuid']=$stuArr[$key]["stuid"];
             //将stuid存入session
-            $_SESSION['stuids'][key] = $stuArr[$key]["stuid"];
+            $_SESSION['stuids'][$key] = $stuArr[$key]["stuid"];
 
             if($value["lxConfirm"] == null){                  //未立项
 
@@ -131,21 +134,26 @@ class StudentInfoController extends CommonController  {
 
     //查看学生详细信息
     public function stuinfo(){
+
+        //获取信息接口token
+        $acc =  C('ACCESS_TOKEN');
+
         //获取学生学号
         $stuId = $_GET['stuId'];
+
 
         //判断当前查询学号是否合法
         $legal = false;
         foreach($_SESSION['stuids'] as $key=>$value){
-            if($_SESSION['stuids'][key] == $stuId)
+            if($_SESSION['stuids'][$key] == $stuId)
             {
                 $legal = true;
                 break;
             }
         }
         //如果当前查询学号不合法，返回查询异常
-        if($legal == false){
-            $result['meta']=array('code' => "49999", 'error' => "illegal access", 'info' => "error");
+        if($legal == false) {
+            $result['meta'] = array('code' => "49999", 'error' => "illegal access", 'info' => "error");
             $this->ajaxReturn($result);
         }
 
@@ -155,23 +163,22 @@ class StudentInfoController extends CommonController  {
         $stuThesisSta= $_GET['stuThesisSta'];//开题状态
         $stuPassSta = $_GET['stuPassSta'];//通过答辩状态
 
-        $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
         $url = "https://api.mysspku.com/index.php/V2/StudentInfo/getDetail?stuid=".$stuId."&token=".$acc;
         //返回json数据包
         $json = file_get_contents($url);
         //将json格式转换为数组
         $arr = json_decode($json,true);
 
-        $name = $arr['data']['name'];
-        $gender = $arr['data']['gender'];
-        $researcharea = $arr['data']['researcharea'];
-        $major = $arr['data']['major_name'];
-        $mail = $arr['data']['mail'];
-        $telephone = $arr['data']['telephone'];
-        $grade = $arr['data']['grade'];
-        $imgurl = $arr['data']['imgurl'];
-        $location = $arr['data']['location'];     //校区
-        $type_name = $arr['data']['type_name'];   //培养方式,如双证
+        $name = $arr['data']['name']?$arr['data']['name']:"";
+        $gender = $arr['data']['gender']?$arr['data']['gender']:"";
+        $researcharea = $arr['data']['researcharea']?$arr['data']['researcharea']:"无";
+        $major = $arr['data']['major_name']?$arr['data']['major_name']:"无";
+        $mail = $arr['data']['mail']?$arr['data']['mail']:"无";
+        $telephone = $arr['data']['telephone']?$arr['data']['telephone']:"无";
+        $grade = $arr['data']['grade']?$arr['data']['grade']:"无";
+        $imgurl = $arr['data']['imgurl']?$arr['data']['imgurl']:"无";
+        $location = $arr['data']['location']?$arr['data']['location']:"无";     //校区
+        $type_name = $arr['data']['type_name']?$arr['data']['type_name']:"无";   //培养方式,如双证
 
         $this->assign('name' , $name);
         $this->assign('gender', $gender);
@@ -196,10 +203,12 @@ class StudentInfoController extends CommonController  {
 
     //实习信息
     public function inerinfo(){
+        //获取信息接口token
+        $acc =  C('ACCESS_TOKEN');
+
         //获取学生学号
         $stuId = $_GET['stuId'];
         //获取该学生实习信息
-        $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
         $url = "https://api.mysspku.com/index.php/V2/StudentInfo/getInternInfo?stuid=".$stuId."&token=".$acc;
         //返回json数据包
         $json = file_get_contents($url);
@@ -207,9 +216,9 @@ class StudentInfoController extends CommonController  {
         $arr = json_decode($json,true);
 
         //实习信息 - 若取出结果为null,显示无
-        $lxDate = $arr['data']['internstarttime'];    //立项日期
-        $jxDate = $arr['data']['internendtime'];  //结项日期
-        $company = $arr['data']['company'];      //实习公司
+        $lxDate = $arr['data']['internstarttime']?:"无";    //立项日期
+        $jxDate = $arr['data']['internendtime']?$arr['data']['internendtime']:"无";  //结项日期
+        $company = $arr['data']['company']?$arr['data']['company']:"无";      //实习公司
         $teacherconfirm = $arr['data']['teacherconfirm'] == '1' ? '审核通过' : '未审核或未通过';
         $libraryconfirm = $arr['data']['libraryconfirm'] == '1' ? '审核通过' : '未审核或未通过';
         $hqconfirm = $arr['data']['hqconfirm'] == '1' ? '审核通过' : '未审核或未通过';
@@ -237,10 +246,12 @@ class StudentInfoController extends CommonController  {
 
     //开题信息
     public function thesisinfo(){
+        //获取信息接口token
+        $acc =  C('ACCESS_TOKEN');
+
         //获取学生学号
         $stuId = $_GET['stuId'];
         //获取该学生开题信息
-        $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
         $url = "https://api.mysspku.com/index.php/V2/StudentInfo/getPaperProposal?stuid=".$stuId."&token=".$acc;
         //返回json数据包
         $json = file_get_contents($url);
@@ -248,8 +259,8 @@ class StudentInfoController extends CommonController  {
         $arr = json_decode($json,true);
 
         //开题信息 - 若取出结果为null,显示无
-        $ktDate = $arr['data']['confirmtime'];  //审核时间
-        $topic = $arr['data']['title'];         //开题题目
+        $ktDate = $arr['data']['confirmtime']?$arr['data']['confirmtime']:"无";  //审核时间
+        $topic = $arr['data']['title']?$arr['data']['title']:"无";         //开题题目
         $tjStatus = $arr['data']['status'] == '1' ? '已提交': '未提交';
         $shStatus = $arr['data']['confirm'] == '1' ? '审核通过' : '未审核或审核未通过';
 
@@ -263,10 +274,11 @@ class StudentInfoController extends CommonController  {
 
     //就业信息
     public function jobinfo(){
+        //获取信息接口token
+        $acc =  C('ACCESS_TOKEN');
         //获取学生学号
         $stuId = $_GET['stuId'];
         //获取该学生就业信息
-        $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
         $url = "https://api.mysspku.com/index.php/V2/StudentInfo/getJobInfo?stuid=".$stuId."&token=".$acc;
         //返回json数据包
         $json = file_get_contents($url);
@@ -274,12 +286,12 @@ class StudentInfoController extends CommonController  {
         $arr = json_decode($json,true);
 
         //就业信息 - 若取出结果为null,显示无
-        $jobSta = $arr['data']['type'];             //就业类型
-        $company = $arr['data']['company'];         //公司名称
-        $position = $arr['data']['position'];       //职位
-        $industry = $arr['data']['industry'];       //所属行业
-        $location = $arr['data']['location'];
-        $salary = $arr['data']['salary'];
+        $jobSta = $arr['data']['type']?$arr['data']['type']:"无";             //就业类型
+        $company = $arr['data']['company']?$arr['data']['company']:"无";         //公司名称
+        $position = $arr['data']['position']?$arr['data']['position']:"无";       //职位
+        $industry = $arr['data']['industry']?$arr['data']['industry']:"无";       //所属行业
+        $location = $arr['data']['location']?$arr['data']['location']:"无";
+        $salary = $arr['data']['salary']?$arr['data']['salary']:"无";
 
         $this->assign('jobSta',$jobSta);
         $this->assign('company',$company);
@@ -293,10 +305,12 @@ class StudentInfoController extends CommonController  {
 
     //答辩信息
     public function defense(){
+        //获取信息接口token
+        $acc =  C('ACCESS_TOKEN');
+
         //获取学生学号
         $stuId = $_GET['stuId'];
         //获取该学生答辩信息
-        $acc = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
         $url = "https://api.mysspku.com/index.php/V2/StudentInfo/getPaperProcess?stuid=".$stuId."&token=".$acc;
         //返回json数据包
         $json = file_get_contents($url);
@@ -304,9 +318,9 @@ class StudentInfoController extends CommonController  {
         $arr = json_decode($json,true);
 
         //获取前端需要的字段
-        $title = $arr['data']['title'];
-        $assistor = $arr['data']['assistor'];
-        $assistormail = $arr['data']['assistormail'];
+        $title = $arr['data']['title']?$arr['data']['title']:"无";
+        $assistor = $arr['data']['assistor']?$arr['data']['assistor']:"无";
+        $assistormail = $arr['data']['assistormail']?$arr['data']['assistormail']:"无";
         $isdraftsubmit = $arr['data']['isdraftsubmit'] == '1' ? '已提交' : '未提交';
         $isteacheragree = $arr['data']['isteacheragree'] == '1' ? '审核通过' : '未审核或审核未通过';
         $eFinalStatus = $arr['data']['eFinalStatus'] == '1' ? '提交成功' : '提交失败或未提交';

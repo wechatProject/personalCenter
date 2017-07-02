@@ -25,7 +25,8 @@ class CommonController extends Controller
 
                     //step 2 --> 获取access_token, 在服务器中通过nodejs的forever模块,每隔1个小时向微信平台获取一次access_token
                     //并存放到本地的token.txt文件中,每次使用access_token时都先从该文件中读取最新的access_token
-                    $filepath = "/home/ubuntu/wxPublic/token.txt";
+//                    $filepath = "/root/wx_token/token.txt";
+                    $filepath = C('TOKEN_FILEPATH');
                     $fp = fopen($filepath, "r");
                     $acc = fread($fp, filesize($filepath));
                     fclose($fp);
